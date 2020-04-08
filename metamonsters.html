@@ -1,0 +1,7443 @@
+ <!DOCTYPE html>
+<html style="height:1024px">
+
+<head>
+<title>Metamorph Monsters</title>
+</head>
+
+<style>
+body {
+	margin:0px;
+	padding:0px 0px 0px 0px;
+	background-image: url("tilingteal.png");
+	font-family:calibri;
+	color:MistyRose;
+}
+div {
+	margin:auto;
+	width:1280px;
+	padding:32px;
+	height:100%;
+	background-color:#070707dd;
+}
+h1, p {
+	margin:0px;
+}
+table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table td, table th {
+  padding: 2px 2px;
+}
+table tr:nth-child(even) {
+  background: #00000060;
+}
+table thead {
+	background: #00000060;
+}
+table thead th {
+  font-size: 18px;
+  font-weight: bold;
+}
+table tfoot td {
+  font-size: 14px;
+}
+table tfoot .links {
+  text-align: right;
+}
+table tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+</style>
+
+<body>
+<div>
+
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">Monster</th>
+<th title="Field #2">Brain (Area Denial)</th>
+<th title="Field #3">Heart (Long Cooldown)</th>
+<th title="Field #4">Lung (Medium Cooldown)</th>
+<th title="Field #5">Liver (Short Cooldown)</th>
+<th title="Field #6">Eyeball (Spammable)</th>
+</tr></thead>
+<tbody><tr>
+<td>King Kaom</td>
+<td>Ancestral Aid</td>
+<td> </td>
+<td>Caldera Leap</td>
+<td>Flame Chasm</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Infernal King</td>
+<td>Ancestral Aid</td>
+<td> </td>
+<td>Caldera Leap</td>
+<td>Flame Chasm</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Ralakesh&#39;s Horn</td>
+<td>Arrow Nova</td>
+<td>Beast Snipe</td>
+<td> </td>
+<td>Arrow Blast</td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>The Animal Pack</td>
+<td>Arrow Nova</td>
+<td> </td>
+<td>Doom Arrow</td>
+<td> </td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Stag Acolyte</td>
+<td>Arrow Nova</td>
+<td> </td>
+<td> </td>
+<td>Arrow Blast</td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>The Burning Man</td>
+<td>Backburn</td>
+<td>Righteous Fire</td>
+<td> </td>
+<td>Lantern Toss</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Cannibal</td>
+<td>Backburn</td>
+<td>Torch Toss</td>
+<td>Flame Hurl</td>
+<td>Rock Toss</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Pocked Flamebringer</td>
+<td>Backburn</td>
+<td> </td>
+<td> </td>
+<td>Lantern Toss</td>
+<td> </td>
+</tr>
+<tr>
+<td>Pocked Illuminator</td>
+<td>Backburn</td>
+<td> </td>
+<td> </td>
+<td>Lantern Toss</td>
+<td> </td>
+</tr>
+<tr>
+<td>Pocked Lanternbearer</td>
+<td>Backburn</td>
+<td> </td>
+<td> </td>
+<td>Lantern Toss</td>
+<td> </td>
+</tr>
+<tr>
+<td>Undying Engineer</td>
+<td>Barrage Ballistae</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Brutus, Lord Incarcerator</td>
+<td>Bed of Nails</td>
+<td>Enraged Slam</td>
+<td>Brute Slam</td>
+<td>Hook</td>
+<td> </td>
+</tr>
+<tr>
+<td>Penitentiary Incarcerator</td>
+<td>Bed of Nails</td>
+<td> </td>
+<td>Brute Slam</td>
+<td>Hook</td>
+<td> </td>
+</tr>
+<tr>
+<td>Warmonger</td>
+<td>Besiege</td>
+<td>Burning Mortars</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>General Gravicius</td>
+<td>Besiege</td>
+<td>Fire Rage</td>
+<td>Burning Mortars</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Tyrant</td>
+<td>Besiege</td>
+<td> </td>
+<td> </td>
+<td>Spontaneous Combustion</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Truth Extractor</td>
+<td>Blade Nova</td>
+<td> </td>
+<td> </td>
+<td>Blade Toss</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Blackguard Stalker</td>
+<td>Blade Whorl</td>
+<td>Assassinating Throw</td>
+<td>Blade Wave</td>
+<td>Finessed Throw</td>
+<td> </td>
+</tr>
+<tr>
+<td>Undying Ravager</td>
+<td>Bladefall</td>
+<td> </td>
+<td> </td>
+<td>Bladefall</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Kraityn&#39;s Sentry</td>
+<td>Blast Bombard</td>
+<td> </td>
+<td>Explosive Barrage</td>
+<td> </td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Lord of the Ashen Arrow</td>
+<td>Blast Bombard</td>
+<td> </td>
+<td>Vaal Burning Arrow</td>
+<td>Flamecrack</td>
+<td>Burning Arrow</td>
+</tr>
+<tr>
+<td>Idolised Saint</td>
+<td>Blazing Arrow</td>
+<td>Vaal Burning Arrow</td>
+<td> </td>
+<td>Burning Barrage</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Kraityn&#39;s Scout</td>
+<td>Blazing Arrow</td>
+<td> </td>
+<td> </td>
+<td>Burning Arrow</td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Wailing Widow</td>
+<td>Blood Boil</td>
+<td>Empowered Hexing Screech</td>
+<td> </td>
+<td>Hexing Screech</td>
+<td> </td>
+</tr>
+<tr>
+<td>Dominus, Ascendant</td>
+<td>Blood Rain</td>
+<td>Shocking Souls</td>
+<td>Touch of God</td>
+<td>Corrupting Cleave</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Hallowed Husk</td>
+<td>Blood Rain</td>
+<td>Shocking Souls</td>
+<td>Touch of God</td>
+<td>Corrupting Cleave</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The White Death</td>
+<td>Blood Vortex</td>
+<td>Gore Cascade</td>
+<td>Flicker Strike</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Burtok, Conjurer of Bones</td>
+<td>Bone Prison</td>
+<td> </td>
+<td> </td>
+<td>Bone Spikes</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Bone Stalker</td>
+<td>Bonequake</td>
+<td> </td>
+<td>Bone Slash</td>
+<td> </td>
+<td>Lunging Slash</td>
+</tr>
+<tr>
+<td>Wicker Man</td>
+<td>Burning Swarm</td>
+<td> </td>
+<td> </td>
+<td>Volcanic Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Shakari, Queen of the Sands</td>
+<td>Burrow</td>
+<td>Tail Slam</td>
+<td>Ground Churn</td>
+<td>Tail Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Terror of the Infinite Drifts</td>
+<td>Burrow</td>
+<td>Tail Slam</td>
+<td>Ground Churn</td>
+<td>Tail Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Voidscream</td>
+<td>Call Colony</td>
+<td> </td>
+<td>Screech Nova</td>
+<td>Screech</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Eye Hatchery</td>
+<td>Carnage Rune</td>
+<td>Eye Summon</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Blackguard Jaeger</td>
+<td>Caustic Arrow</td>
+<td> </td>
+<td> </td>
+<td>Caustic Arrow</td>
+<td>Crossbow Shot</td>
+</tr>
+<tr>
+<td>Rooster Demon</td>
+<td>Caustic Ballistae</td>
+<td> </td>
+<td>Lightning Arrow</td>
+<td> </td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Oozeback Bloom</td>
+<td>Caustic Blast</td>
+<td>Screeching Cry</td>
+<td> </td>
+<td> </td>
+<td>Lunging Bite</td>
+</tr>
+<tr>
+<td>Arachnoxia</td>
+<td>Caustic Blast</td>
+<td>Spider Mortar</td>
+<td>Caustic Leap</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Fallen Queen</td>
+<td>Caustic Blast</td>
+<td> </td>
+<td>Ethereal Knives</td>
+<td> </td>
+<td>Viper Strike</td>
+</tr>
+<tr>
+<td>Talon Archer</td>
+<td>Caustic Blast</td>
+<td> </td>
+<td>Lightning Nova</td>
+<td> </td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Enslaved Hellion</td>
+<td>Caustic Blast</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Shambling Cadaver</td>
+<td>Caustic Blast</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Sutured Aberration</td>
+<td>Caustic Blast</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Undying Alchemist</td>
+<td>Caustic Bomb Cascade</td>
+<td> </td>
+<td>Fireball Sweep</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Plaguewing</td>
+<td>Caustic Bombardment</td>
+<td>Caustic Dive</td>
+<td>Caustic Mortar</td>
+<td>Caustic Leap</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Mephitic Maiden</td>
+<td>Caustic Bombardment</td>
+<td> </td>
+<td> </td>
+<td>Caustic Mortar</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Infested Maw</td>
+<td>Caustic Leap</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Bramble Cobra</td>
+<td>Caustic Spit</td>
+<td> </td>
+<td> </td>
+<td>Snake Spit</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Host Cobra</td>
+<td>Caustic Spit</td>
+<td> </td>
+<td> </td>
+<td>Snake Spit</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Glade Mamba</td>
+<td>Caustic Spit</td>
+<td> </td>
+<td> </td>
+<td>Snake Spit</td>
+<td> </td>
+</tr>
+<tr>
+<td>Rudiarius Felix</td>
+<td>Caustic Trap</td>
+<td> </td>
+<td>Puncture Trap</td>
+<td>Barrage</td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Void Anomaly</td>
+<td>Chaos Storm</td>
+<td>Chaos Storm</td>
+<td> </td>
+<td>Chaos Cascade</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Maligaro the Mutilator</td>
+<td>Chaos Storm</td>
+<td>Combo Strike</td>
+<td>Teleport Slam</td>
+<td>Boomerang</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Maligaro, The Broken</td>
+<td>Chaos Storm</td>
+<td>Combo Strike</td>
+<td>Teleport Slam</td>
+<td>Boomerang</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Avatar of Undoing</td>
+<td>Chaos Storm</td>
+<td> </td>
+<td> </td>
+<td>Chaos Cascade</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>General Adus</td>
+<td>Charged Earthquake</td>
+<td>Living Bomb</td>
+<td> </td>
+<td>Earthquake</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Pesquin, the Mad Baron</td>
+<td>Charged Earthquake</td>
+<td>Living Bomb</td>
+<td> </td>
+<td>Earthquake</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Eroding One</td>
+<td>Charged Earthquake</td>
+<td>Sand Slam</td>
+<td>Rollout</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Bolt Brownfur, Earth Churner</td>
+<td>Charged Earthquake</td>
+<td> </td>
+<td>Leap Slam</td>
+<td>Sunder</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The High Templar</td>
+<td>Chillilng Bond</td>
+<td>Shocking Souls</td>
+<td>Touch of God</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Spectral Mage</td>
+<td>Chilling Nova</td>
+<td> </td>
+<td>Chilling Nova</td>
+<td> </td>
+<td>Wand Bolt</td>
+</tr>
+<tr>
+<td>Undying Incinerator</td>
+<td>Cluster Firebomb</td>
+<td> </td>
+<td>Fireball Barrage</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Maligaro, The Inquisitor</td>
+<td>Combust Ground</td>
+<td> </td>
+<td>Ethereal Knives</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>He of Many Pieces</td>
+<td>Combust Ground</td>
+<td> </td>
+<td> </td>
+<td>Ethereal Knives</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Blackguard Tempest</td>
+<td>Conductivity Circle</td>
+<td>Lightning Blast</td>
+<td> </td>
+<td>Spark Spray</td>
+<td>Wand Bolt</td>
+</tr>
+<tr>
+<td>Hatebeat</td>
+<td>Conflagration</td>
+<td>Fire Storm</td>
+<td>Magma Strike</td>
+<td>Rolling Flames</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Megaera</td>
+<td>Conflagration</td>
+<td>Fire Storm</td>
+<td>Raise Burning Bones</td>
+<td>Fire Bomb</td>
+<td>Fire Strike</td>
+</tr>
+<tr>
+<td>Fire Fury</td>
+<td>Conflagration</td>
+<td>Fire Storm</td>
+<td>Raise Burning Bones</td>
+<td>Flamecrack</td>
+<td>Fire Strike</td>
+</tr>
+<tr>
+<td>The Infernal Seal</td>
+<td>Conflagration</td>
+<td>Heated Volatiles</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Arakaali, Spinner of Shadows</td>
+<td>Corrupt Webs</td>
+<td>Laser Barrage</td>
+<td>Chaos Tendrils</td>
+<td>Egg Mortar</td>
+<td> </td>
+</tr>
+<tr>
+<td>Armala, the Widow</td>
+<td>Corrupt Webs</td>
+<td>Laser Barrage</td>
+<td>Chaos Tendrils</td>
+<td>Egg Mortar</td>
+<td> </td>
+</tr>
+<tr>
+<td>Piety, the Abomination</td>
+<td>Corrupted Ball Lightning</td>
+<td>Corruption Beam</td>
+<td>Corruted Cleave</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Nightmare Manifest</td>
+<td>Corrupted Ball Lightning</td>
+<td>Corruption Beam</td>
+<td> </td>
+<td>Corruted Cleave</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Burned Miscreation</td>
+<td>Creeping Fire</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Slave Catcher</td>
+<td>Crowd Catcher</td>
+<td>Tracking Shot</td>
+<td>Repeater Shot</td>
+<td>Penetrating Shot</td>
+<td>Crossbow Shot</td>
+</tr>
+<tr>
+<td>Deranged Slaver</td>
+<td>Crowd Catcher</td>
+<td> </td>
+<td>Explosive Shot</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Depraved Slaver</td>
+<td>Crowd Catcher</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Avarius, Reassembled</td>
+<td>Cursed Beams</td>
+<td>Corruption Barrage</td>
+<td>Corrupted Fire</td>
+<td>Wicked Cleave</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Woad, Mockery of Man</td>
+<td>Cursed Beams</td>
+<td>Corruption Barrage</td>
+<td>Corrupted Fire</td>
+<td>Wicked Cleave</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Dimachaeri Cassius</td>
+<td>Cyclone</td>
+<td>Ice Crash</td>
+<td>Leap Slam</td>
+<td>Glacial Hammer</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Avatar of the Forge</td>
+<td>Cyclone</td>
+<td>Ice Crash</td>
+<td>Leap Slam</td>
+<td> </td>
+<td>Glacial Hammer</td>
+</tr>
+<tr>
+<td>Ambrius, Legion Slayer</td>
+<td>Dance of Death</td>
+<td>Triple Reave</td>
+<td>Triple Strike</td>
+<td>Daresso Dash</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Daresso, King of Swords</td>
+<td>Dance of Death</td>
+<td>Triple Reave</td>
+<td>Triple Strike</td>
+<td>Daresso Dash</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Amalgam of Nightmares</td>
+<td>Darktongue Regurgitation</td>
+<td>Storm Nova</td>
+<td> </td>
+<td>Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Depraved Trinity</td>
+<td>Darktongue Regurgitation</td>
+<td>Storm Nova</td>
+<td> </td>
+<td>Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Guardian of the Vault</td>
+<td>Delayed Blast</td>
+<td> </td>
+<td>Leap Slam</td>
+<td>Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Kalria, The Fallen</td>
+<td>Desecrate</td>
+<td> </td>
+<td>Lightning Warp</td>
+<td>Barrage</td>
+<td>Kinetic Blast</td>
+</tr>
+<tr>
+<td>Barthol, the Corruptor</td>
+<td>Desecrated Flares</td>
+<td>Desecrated Incinerate</td>
+<td>Desecrated Nova</td>
+<td>Desecrated Blast</td>
+<td> </td>
+</tr>
+<tr>
+<td>Vessider, The Unrivaled</td>
+<td>Desecration</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Wand Bolt</td>
+</tr>
+<tr>
+<td>Erebix, Light&#39;s Bane</td>
+<td>Despair Pit</td>
+<td> </td>
+<td>Earthquake</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Gruthkul, Mother of Despair</td>
+<td>Despair Pit</td>
+<td> </td>
+<td>Earthquake</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Lord of the Grey</td>
+<td>Devouring Darkness</td>
+<td>Crush</td>
+<td>Kitava Surge</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Kitava, The Destroyer</td>
+<td>Devouring Darkness</td>
+<td>Kitava Bombardment</td>
+<td>Kitava Surge</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Kitava, the Insatiable</td>
+<td>Devouring Darkness</td>
+<td>Kitava Bombardment</td>
+<td>Kitava Surge</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Cato, Scholar of Light</td>
+<td>Divine Flares</td>
+<td> </td>
+<td>Divine Incinerate</td>
+<td>Divine Fireball</td>
+<td> </td>
+</tr>
+<tr>
+<td>Temple Guardian</td>
+<td>Divine Protection</td>
+<td>Spiralling Arsenal</td>
+<td> </td>
+<td>Spectral Arsenal</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Goddess of Purity</td>
+<td>Drowning Tome</td>
+<td> </td>
+<td>Living Water</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Shrieker Eihal</td>
+<td>Dust Storm</td>
+<td> </td>
+<td>Screech Nova</td>
+<td>Screech</td>
+<td> </td>
+</tr>
+<tr>
+<td>Animated Reef</td>
+<td>Earth Churner</td>
+<td> </td>
+<td>Ground Churn</td>
+<td>Rock Slam</td>
+<td> </td>
+</tr>
+<tr>
+<td>Boulderback</td>
+<td>Earthquake</td>
+<td>Landslide</td>
+<td>Charge</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Captain Tanner Lightfoot</td>
+<td>Earthquake Cascade</td>
+<td>Double Cascade</td>
+<td>Earthquake Cascade</td>
+<td>Fireball</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Gemling Legionnaire</td>
+<td>Earthquake Cascade</td>
+<td>Double Cascade</td>
+<td>Glacial Blast</td>
+<td>Glacial Cascade</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Gemling Captain</td>
+<td>Earthquake Cascade</td>
+<td>Earthquake Cascade</td>
+<td>Double Cascade</td>
+<td>Fireball</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Ironclad Demolisher</td>
+<td>Earthquake Cascade</td>
+<td>Earthquake Cascade</td>
+<td> </td>
+<td>Earthquake</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Boiling Ambusher</td>
+<td>Elemental Volatiles</td>
+<td>Flash Freeze</td>
+<td>Water Nova</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Boiling Strider</td>
+<td>Elemental Volatiles</td>
+<td>Flash Freeze</td>
+<td>Water Nova</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Perpetus</td>
+<td>Entrap</td>
+<td>Blade Spiral</td>
+<td> </td>
+<td>Ethereal Knifestorm</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Reaver</td>
+<td>Entrap</td>
+<td> </td>
+<td>Blade Spiral</td>
+<td>Ethereal Knifestorm</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Uruk Baleh</td>
+<td>Fire Beacon</td>
+<td>Living Firebomb</td>
+<td>Molten Strike</td>
+<td>Fire Cyclone</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Infernal Sentinel</td>
+<td>Fire Blast</td>
+<td> </td>
+<td>Fire Blast</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Vaal Arsonist</td>
+<td>Fire Storm</td>
+<td> </td>
+<td>Flame Bolt</td>
+<td> </td>
+<td>Projected Fire</td>
+</tr>
+<tr>
+<td>Ungulath</td>
+<td>Fireball Cascade</td>
+<td>Molten Shell</td>
+<td> </td>
+<td> </td>
+<td>Fire Strike</td>
+</tr>
+<tr>
+<td>Herald of Ashes</td>
+<td>Flame Beacon</td>
+<td>Firestorm</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Kraityn&#39;s Sniper</td>
+<td>Flame Beacon</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Volcanic Golem</td>
+<td>Flame Bombardment</td>
+<td>Flamethrower</td>
+<td>Tracking Mortar</td>
+<td>Fire Mortar</td>
+<td> </td>
+</tr>
+<tr>
+<td>Argient</td>
+<td>Flame Cage</td>
+<td> </td>
+<td>Flame Nova</td>
+<td>Flame Whip</td>
+<td> </td>
+</tr>
+<tr>
+<td>The Shipyard Terror</td>
+<td>Flame Cage</td>
+<td> </td>
+<td> </td>
+<td>Flame Breath</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Leli Goya, Daughter of Ash</td>
+<td>Flame Call</td>
+<td> </td>
+<td>Flame Mortar</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Tukohama&#39;s Vanguard</td>
+<td>Flame Totem Formation</td>
+<td> </td>
+<td>Flame Totem</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Avatar of the Skies</td>
+<td>Flameblast</td>
+<td>Vaal Summon Skeletons</td>
+<td>Summon Spirit</td>
+<td>Fireball</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Mevion</td>
+<td>Flameblast</td>
+<td>Vaal Summon Skeletons</td>
+<td>Summon Spirit</td>
+<td>Fireball</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Igna Phoenix</td>
+<td>Flamestorm</td>
+<td>Vaal Fireball</td>
+<td> </td>
+<td>Fireball</td>
+<td> </td>
+</tr>
+<tr>
+<td>Mountain Hellion</td>
+<td>Flash Freeze</td>
+<td>Tracking Mortar</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Mountain Hellion Alpha</td>
+<td>Flash Freeze</td>
+<td>Tracking Mortar</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Undying Cultist</td>
+<td>Freezing Assault</td>
+<td>Freezing Spiral</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Undying Archivist</td>
+<td>Freezing Assault</td>
+<td> </td>
+<td>Freezing Spiral</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Eyepecker</td>
+<td>Frost Ballistae</td>
+<td>Ballistae Prison</td>
+<td> </td>
+<td>Caustic Arrow</td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Rime Sentinel</td>
+<td>Frost Blast</td>
+<td> </td>
+<td>Frost Blast</td>
+<td>Guardian Surge</td>
+<td> </td>
+</tr>
+<tr>
+<td>Cavern Strider</td>
+<td>Frost Burst</td>
+<td>Frost Barrage</td>
+<td>Cleaving Frost</td>
+<td>Crashing Wave</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Maelström</td>
+<td>Frost Fling</td>
+<td> </td>
+<td> </td>
+<td>Frost Spheres</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Muck Vortex</td>
+<td>Frost Fling</td>
+<td> </td>
+<td> </td>
+<td>Frost Spheres</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Vortex</td>
+<td>Frost Fling</td>
+<td> </td>
+<td> </td>
+<td>Frost Spheres</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Frost Bishop</td>
+<td>Frost Spheres</td>
+<td> </td>
+<td>Frost Spray</td>
+<td> </td>
+<td>Projected Ice</td>
+</tr>
+<tr>
+<td>Axiom Frostguard</td>
+<td>Frost Spheres</td>
+<td> </td>
+<td> </td>
+<td>Frost Spray</td>
+<td>Projected Ice</td>
+</tr>
+<tr>
+<td>Frost Archmage</td>
+<td>Frost Spheres</td>
+<td> </td>
+<td> </td>
+<td>Frost Spray</td>
+<td>Projected Ice</td>
+</tr>
+<tr>
+<td>Frost Preacher</td>
+<td>Frost Spheres</td>
+<td> </td>
+<td> </td>
+<td>Frost Spray</td>
+<td>Projected Ice</td>
+</tr>
+<tr>
+<td>Frost Priest</td>
+<td>Frost Spheres</td>
+<td> </td>
+<td> </td>
+<td>Frost Spray</td>
+<td>Projected Ice</td>
+</tr>
+<tr>
+<td>Seething Brine</td>
+<td>Frost Volatiles</td>
+<td>Liquid Cleave</td>
+<td>Water Nova</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Lunarsworn Archmage</td>
+<td>Frostbite</td>
+<td> </td>
+<td>Splitting Frost</td>
+<td> </td>
+<td>Wand Bolt</td>
+</tr>
+<tr>
+<td>Chatters</td>
+<td>Frosted Shield Toss</td>
+<td> </td>
+<td> </td>
+<td>Glacial Hammer</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Brittle Poacher</td>
+<td>Galvanic Rain</td>
+<td> </td>
+<td> </td>
+<td>Lightning Arrow</td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Sin Archer</td>
+<td>Galvanic Rain</td>
+<td> </td>
+<td> </td>
+<td>Lightning Volley</td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Brittle Born-again</td>
+<td>Galvanic Rain</td>
+<td> </td>
+<td> </td>
+<td>Split Arrow</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Restless Archer</td>
+<td>Galvanic Rain</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Merveil, the Returned</td>
+<td>Geyser Arena</td>
+<td>Ice Storm</td>
+<td>Ice Shard Barrage</td>
+<td>Sea Surge</td>
+<td> </td>
+</tr>
+<tr>
+<td>Merveil, the Twisted</td>
+<td>Geyser Arena</td>
+<td>Ice Storm</td>
+<td>Ice Shard Barrage</td>
+<td>Sea Surge</td>
+<td> </td>
+</tr>
+<tr>
+<td>Reliquarian</td>
+<td>Gilded Torrent</td>
+<td>Gilded Rain</td>
+<td>Holy Fireball Spray</td>
+<td>Holy Fireball</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Yorishi, Aurora-sage</td>
+<td>Glacial Arena</td>
+<td>Arctic Nova</td>
+<td>Frost Leap</td>
+<td>Ice Crash</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Stone of the Currents</td>
+<td>Golem Arc</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Golem Strike</td>
+</tr>
+<tr>
+<td>Mephod, the Earth Scorcher</td>
+<td>Hellfire Barrage</td>
+<td>Pyroclasm</td>
+<td>Fire Blast</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Abberath, the Cloven One</td>
+<td>Hellfire Barrage</td>
+<td>Pyroclasm</td>
+<td>Leap Slam</td>
+<td>Fire Blast</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Jeinei Yuushu</td>
+<td>Ice Beacon</td>
+<td>Mirror Arrow</td>
+<td>Tornado Shot</td>
+<td>Barrage</td>
+<td> </td>
+</tr>
+<tr>
+<td>Moontouched Miscreation</td>
+<td>Ice Bomb</td>
+<td> </td>
+<td>Slam</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Stranglecharm</td>
+<td>Ice Prison</td>
+<td>Call from the Deep</td>
+<td>Water Nova</td>
+<td>Crashing Wave</td>
+<td> </td>
+</tr>
+<tr>
+<td>Thistlesage</td>
+<td>Ice Spear Barrage</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Multistrike</td>
+</tr>
+<tr>
+<td>Otesha, the Giantslayer</td>
+<td>Ice Storm</td>
+<td>Cold Snap</td>
+<td>Whirling Blades</td>
+<td>Frost Throw</td>
+<td> </td>
+</tr>
+<tr>
+<td>Lunar Devotee</td>
+<td>Icestorm</td>
+<td>Summon Ice</td>
+<td> </td>
+<td>Frost Shot</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Blood Vortex</td>
+<td>Ichor Wave</td>
+<td>Ichor Barrage</td>
+<td>Ichor Spheres</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Goddess</td>
+<td>Judgement Barrage</td>
+<td>Skeletal Defenders</td>
+<td>Spirit Mortar</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Vision of Justice</td>
+<td>Judgement Barrage</td>
+<td>Skeletal Defenders</td>
+<td>Spirit Mortar</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Lavianga&#39;s Acolyte</td>
+<td>Karui Firestorm</td>
+<td>Karui Bombardment</td>
+<td> </td>
+<td>Flamewhip Nova</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Kaom&#39;s Chosen</td>
+<td>Karui Flame Slam</td>
+<td> </td>
+<td>Ground Slam</td>
+<td>Molten Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Kitava&#39;s Herald</td>
+<td>Kitava Mortar</td>
+<td>Kitava Blast</td>
+<td>Leap Slam</td>
+<td>Corrupted Cleave</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Molten Lion</td>
+<td>Lava Breath</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Aulen Greychain</td>
+<td>Leap Quake</td>
+<td>Enduring Cry</td>
+<td>Ancestral Protector</td>
+<td>Sweep</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Oak the Mighty</td>
+<td>Leap Quake</td>
+<td>Enduring Cry</td>
+<td>Ancestral Protector</td>
+<td>Sweep</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Scavenging Vulture</td>
+<td>Leap Slam</td>
+<td> </td>
+<td> </td>
+<td>Vulture Mortar</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Alpine Devil</td>
+<td>Leap Slam Earthquake</td>
+<td> </td>
+<td>Leap Slam</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Goatman</td>
+<td>Leap Slam Quake</td>
+<td> </td>
+<td> </td>
+<td>Leap Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Lussi &quot;Rotmother&quot; Roth</td>
+<td>Lightning Beacon</td>
+<td>Lightning Spiral</td>
+<td>Lightning Storm</td>
+<td> </td>
+<td>Powered Shot</td>
+</tr>
+<tr>
+<td>Herald of Thunder</td>
+<td>Lightning Beacon</td>
+<td> </td>
+<td>Shock Nova</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Axiom Thunderguard</td>
+<td>Lightning Beacons</td>
+<td> </td>
+<td>Charged Nova</td>
+<td> </td>
+<td>Projected Lightning</td>
+</tr>
+<tr>
+<td>Thunder Archmage</td>
+<td>Lightning Beacons</td>
+<td> </td>
+<td>Charged Nova</td>
+<td> </td>
+<td>Projected Lightning</td>
+</tr>
+<tr>
+<td>Marceus the Defaced</td>
+<td>Lightning Crater</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Spinecrack</td>
+<td>Lightning Crater</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Caliga, Imperatrix</td>
+<td>Lightning Field</td>
+<td> </td>
+<td> </td>
+<td>Lightning Trap</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Fidelitas, Loyalty Undying</td>
+<td>Lightning Shield</td>
+<td> </td>
+<td>Tail Strike</td>
+<td>Chaos Storm</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Piety the Empyrean</td>
+<td>Lightning Storm</td>
+<td>Ice Shot</td>
+<td>Ball Lightning Wave</td>
+<td>Arc</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Piety</td>
+<td>Lightning Storm</td>
+<td> </td>
+<td>Ball Lightning Wave</td>
+<td>Arc</td>
+<td> </td>
+</tr>
+<tr>
+<td>Susara, Siren of Pondium</td>
+<td>Ligning Trap Cluster</td>
+<td> </td>
+<td>Lightning Warp</td>
+<td>Storm Call</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Lunaris, Eternal Moon</td>
+<td>Lunar Storm</td>
+<td>Lunar Cyclone</td>
+<td>Lunar Combo</td>
+<td>Lunar Glaive</td>
+<td> </td>
+</tr>
+<tr>
+<td>The Risen Matriarch</td>
+<td>Lurching Magma</td>
+<td> </td>
+<td>Magma Cascade</td>
+<td>Magma Wave</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Pileah, Corpse Burner</td>
+<td>Lurching Magma</td>
+<td> </td>
+<td>Magma Nova</td>
+<td>Magma Wave</td>
+<td> </td>
+</tr>
+<tr>
+<td>The Matriarch</td>
+<td>Lurching Magma</td>
+<td> </td>
+<td>Magma Nova</td>
+<td>Magma Wave</td>
+<td> </td>
+</tr>
+<tr>
+<td>Spectral Tactician</td>
+<td>Necrotic Orbs</td>
+<td>Damned Spirits</td>
+<td>Necrotic Orbs</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Platinia</td>
+<td>Orb of Storms</td>
+<td> </td>
+<td> </td>
+<td>Static Strike</td>
+<td>Lightning Strike</td>
+</tr>
+<tr>
+<td>Inua Totem</td>
+<td>Pelting Nova</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Pelt</td>
+</tr>
+<tr>
+<td>The Cleansing Light</td>
+<td>Purging Orb</td>
+<td>Purging Light</td>
+<td>Weight of Divinity</td>
+<td>Scattered Light</td>
+<td>Lunging Cleave</td>
+</tr>
+<tr>
+<td>Innocence, God-Emperor of Eternity</td>
+<td>Purging Orb</td>
+<td>Purifying Light</td>
+<td>Weight of Divinity</td>
+<td>Scattered Light</td>
+<td>Lunging Cleave</td>
+</tr>
+<tr>
+<td>Blessed Sister</td>
+<td>Ring of Fire</td>
+<td>Ember Toss</td>
+<td>Magma Nova</td>
+<td>Magma Wave</td>
+<td> </td>
+</tr>
+<tr>
+<td>El&#39;Abin, Bloodeater</td>
+<td>Ring of Fire</td>
+<td>Volcanic Upheaval</td>
+<td> </td>
+<td>Flame Reave</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Sanguine Sister</td>
+<td>Ring of Fire</td>
+<td> </td>
+<td>Magma Cascade</td>
+<td>Magma Wave</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Beast of the Pits</td>
+<td>Rock Storm</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Vaal Oversoul</td>
+<td>Rockfall</td>
+<td>Demolish</td>
+<td>Disintegrate</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Shadow of the Vaal</td>
+<td>Rockfall</td>
+<td>Demolish</td>
+<td>Light of Sacrifice</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Defiled Extractor</td>
+<td>Sawblade Barrage</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Burning Menace</td>
+<td>Scorched Earth</td>
+<td> </td>
+<td> </td>
+<td>Flame Slash</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Guardian of the Minotaur</td>
+<td>Seismic Slam</td>
+<td>Tunnelling Strike</td>
+<td>Sweep</td>
+<td> </td>
+<td>Minotaur Strike</td>
+</tr>
+<tr>
+<td>The Voltaic Seal</td>
+<td>Shock Cascade</td>
+<td>Volatile Lightning</td>
+<td>Shock Sequence</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Dirt Scrabbler</td>
+<td>Shocking Leap</td>
+<td>Leaper Lightning</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Merveil&#39;s Attendant</td>
+<td>Siren&#39;s Call</td>
+<td>Explosive Swarm</td>
+<td> </td>
+<td>Sea Surge</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Brood Princess</td>
+<td>Siren&#39;s Call</td>
+<td>Geyser</td>
+<td> </td>
+<td>Sea Surge</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Singing Siren</td>
+<td>Siren&#39;s Call</td>
+<td> </td>
+<td> </td>
+<td>Sea Surge</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Solaris, Eternal Sun</td>
+<td>Solar Blaze</td>
+<td>Solar Lance</td>
+<td>Solar Blast</td>
+<td>Solar Lance</td>
+<td>Thrusting Strike</td>
+</tr>
+<tr>
+<td>Dawn, Harbinger of Solaris</td>
+<td>Solar Ray</td>
+<td> </td>
+<td>Holy Bladefall</td>
+<td>Holy Shield Toss</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Jorus, Sky&#39;s Edge</td>
+<td>Solar Ray</td>
+<td> </td>
+<td>Holy Bladefall</td>
+<td>Holy Shield Toss</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Fidelitas, the Mourning</td>
+<td>Spark Nova</td>
+<td> </td>
+<td> </td>
+<td>Lightning Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Blackguard Mage</td>
+<td>Spark Spire</td>
+<td>Thunder Rage</td>
+<td> </td>
+<td>Spark</td>
+<td>Wand Bolt</td>
+</tr>
+<tr>
+<td>Oriath&#39;s Virtue</td>
+<td>Spark Spire</td>
+<td> </td>
+<td>Lightning Warp</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Compulsor Octavia Sparkfist</td>
+<td>Spark Spire</td>
+<td> </td>
+<td> </td>
+<td>Lightning Warp</td>
+<td> </td>
+</tr>
+<tr>
+<td>Undying Subject</td>
+<td>Sparking Contraption</td>
+<td> </td>
+<td>Spark Nova</td>
+<td>Spark Nova</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Hammerstorm</td>
+<td>Spectral Hammer</td>
+<td>Spectral Hammer</td>
+<td> </td>
+<td>Spectral Hammer</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Breaker Toruul</td>
+<td>Spectral Hammer</td>
+<td> </td>
+<td>Spectral Hammer</td>
+<td>Spectral Hammer</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Captain Fairgraves</td>
+<td>Spectral Swarm</td>
+<td> </td>
+<td> </td>
+<td>Spectral Weapon</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Ancient Architect</td>
+<td>Spiked Ground</td>
+<td> </td>
+<td> </td>
+<td>Thrown Weapon</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>K&#39;aj A&#39;alai</td>
+<td>Spine Storm</td>
+<td> </td>
+<td>Spine Rain</td>
+<td>Demonic Spike</td>
+<td> </td>
+</tr>
+<tr>
+<td>Infested Serpent</td>
+<td>Spine Storm</td>
+<td> </td>
+<td> </td>
+<td>Spine Shot</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Spine Construct</td>
+<td>Spine Storm</td>
+<td> </td>
+<td> </td>
+<td>Spine Shot</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Heretical Guardian</td>
+<td>Spiralling Arsenal</td>
+<td>Divine Protection</td>
+<td> </td>
+<td>Spectral Arsenal</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Orphaned Guardian</td>
+<td>Spiralling Arsenal</td>
+<td>Divine Protection</td>
+<td> </td>
+<td>Spectral Arsenal</td>
+<td> </td>
+</tr>
+<tr>
+<td>Heretical Ward</td>
+<td>Spiralling Arsenal</td>
+<td> </td>
+<td>Shield Bash</td>
+<td>Shield Bash</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Orphaned Ward</td>
+<td>Spiralling Arsenal</td>
+<td> </td>
+<td>Shield Bash</td>
+<td>Shield Bash</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Wraith</td>
+<td>Spiralling Blades</td>
+<td>Blade Ring</td>
+<td> </td>
+<td>Wraith Blades</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Crustacean Sniper</td>
+<td>Stone Barrage</td>
+<td>Frost Shot</td>
+<td>Frost Snipe</td>
+<td>Frost Shot</td>
+<td>Frost Shot</td>
+</tr>
+<tr>
+<td>Kuduku, the False God</td>
+<td>Storm Blast</td>
+<td>Expanding Shocknova</td>
+<td>Spark Nova</td>
+<td>Spark</td>
+<td> </td>
+</tr>
+<tr>
+<td>Temple Adjudicator</td>
+<td>Storm Cage</td>
+<td>Storm Fall</td>
+<td>Scattered Ball Lightning</td>
+<td>Hallowed Ball Lightning</td>
+<td> </td>
+</tr>
+<tr>
+<td>Heretical Adjudicator</td>
+<td>Storm Cage</td>
+<td>Storm Fall</td>
+<td>Storm Strike</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Orphaned Adjudicator</td>
+<td>Storm Cage</td>
+<td>Storm Fall</td>
+<td>Storm Strike</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Poporo, the Highest Spire</td>
+<td>Storm Cascade</td>
+<td>Lightning Pulse</td>
+<td>Lightning Orbs</td>
+<td>Lightning Mortar</td>
+<td> </td>
+</tr>
+<tr>
+<td>Shavronne of Umbra</td>
+<td>Storm Cascade</td>
+<td>Storm Cascade</td>
+<td>Lightning Tendrils</td>
+<td>Thunder Ball</td>
+<td> </td>
+</tr>
+<tr>
+<td>Icy Manifestation</td>
+<td>Storm Cascade</td>
+<td> </td>
+<td>Shard Barrage</td>
+<td>Shard Barrage</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Lady Stormflay</td>
+<td>Storm Ground</td>
+<td> </td>
+<td> </td>
+<td>Lightning Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Ironpoint the Forsaken</td>
+<td>Storm of Arrows</td>
+<td> </td>
+<td>Splitting Barrage</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>The Steel Soul</td>
+<td>Sword Storm</td>
+<td> </td>
+<td>Saw Storm</td>
+<td>Double Slash</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Noisome Ophidian</td>
+<td>Tar Bomb</td>
+<td> </td>
+<td> </td>
+<td>Tar Bomb</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Undying Dreg</td>
+<td>Tar Bomb</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Swarthy Mollusc</td>
+<td>Tar Dive</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Lord of the Hollows</td>
+<td>Targeted Upheaval</td>
+<td>Ground Churn</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Pikerivet</td>
+<td>Targeted Upheaval</td>
+<td>Ground Churn</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Ancient Sculptor</td>
+<td>Tarred Ground</td>
+<td> </td>
+<td> </td>
+<td>Thrown Weapon</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Merveil&#39;s Chosen</td>
+<td>Temporal Anomalies</td>
+<td>Spawn Swarm</td>
+<td> </td>
+<td>Sea Surge</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Archbishop Geofri the Abashed</td>
+<td>Temporal Anomalies</td>
+<td>Volatile Swarm</td>
+<td>Skeletal Slam</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Dreadstone</td>
+<td>Temporal Anomalies</td>
+<td> </td>
+<td>Chaos Upheaval</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Mortality Experimenter</td>
+<td>Temporal Anomalies</td>
+<td> </td>
+<td>Desecration Detonation</td>
+<td> </td>
+<td>Wand Bolt</td>
+</tr>
+<tr>
+<td>Rheniot</td>
+<td>Thorn Bombs</td>
+<td> </td>
+<td>Holy Blades</td>
+<td>Spectral Throw</td>
+<td> </td>
+</tr>
+<tr>
+<td>Suncaller Asha</td>
+<td>Thorn Spheres</td>
+<td>Solar Ray</td>
+<td>Leap Slam</td>
+<td> </td>
+<td>Holy Strike</td>
+</tr>
+<tr>
+<td>Desecrated Saint</td>
+<td>Thorn Spheres</td>
+<td> </td>
+<td>Desecrated Wave</td>
+<td>Desecrated Spray</td>
+<td>Desecrated Blast</td>
+</tr>
+<tr>
+<td>Sand Skitterer</td>
+<td>Thorn Spheres</td>
+<td> </td>
+<td>Leap Slam</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Bearded Skycaller</td>
+<td>Thunder Storm</td>
+<td> </td>
+<td>Shocking Nova</td>
+<td>Spark Nova</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Bloodsoaked Vanguard</td>
+<td>Tornado Storm</td>
+<td>Carpet Bomb</td>
+<td> </td>
+<td>Tornado Shot</td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Crystallised Sentry</td>
+<td>Tornado Storm</td>
+<td> </td>
+<td>Tornado Spray</td>
+<td>Tornado Shot</td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Sun Bleached Vanguard</td>
+<td>Tornado Storm</td>
+<td> </td>
+<td>Tornado Spray</td>
+<td>Tornado Shot</td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Bloodstained Vanguard</td>
+<td>Tornado Storm</td>
+<td> </td>
+<td> </td>
+<td>Tornado Shot</td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Voll&#39;s Vanguard</td>
+<td>Tornado Storm</td>
+<td> </td>
+<td> </td>
+<td>Tornado Shot</td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Garukhan, Queen of the Winds</td>
+<td>Tornado Swarm</td>
+<td>Desert Dash</td>
+<td>Combo Strike</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Stalker of the Endless Dunes</td>
+<td>Tornado Swarm</td>
+<td>Desert Dash</td>
+<td>Combo Strike</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Gorulis, Will-Thief</td>
+<td>Toxic Growths</td>
+<td>Caustic Breath</td>
+<td> </td>
+<td> </td>
+<td>Insect Spit</td>
+</tr>
+<tr>
+<td>Ryslatha, the Puppet Mistress</td>
+<td>Toxic Growths</td>
+<td>Caustic Breath</td>
+<td> </td>
+<td> </td>
+<td>Insect Spit</td>
+</tr>
+<tr>
+<td>Trinian, Intellectus Prime</td>
+<td>Turbulent Winds</td>
+<td> </td>
+<td> </td>
+<td>Book Throw</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Gleaming Saint</td>
+<td>Unholy Beacons</td>
+<td> </td>
+<td>Gleaming Wave</td>
+<td>Gleaming Spray</td>
+<td>Gleaming Projectile</td>
+</tr>
+<tr>
+<td>Awoken Giant</td>
+<td>Unmaking Volatiles</td>
+<td>Quake Slam</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Risen Saint</td>
+<td>Unmaking Volatiles</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Undying Labourer</td>
+<td>Vaal Glacial Hammer</td>
+<td>Ice Shot Ballistae</td>
+<td> </td>
+<td>Glacial Hammer</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Eoin Greyfur</td>
+<td>Vaal Glacial Hammer</td>
+<td>Vaal Cold Snap</td>
+<td>Cyclone</td>
+<td> </td>
+<td>Glacial Hammer</td>
+</tr>
+<tr>
+<td>Bravalo</td>
+<td>Vaal Glacial Hammer</td>
+<td> </td>
+<td>Sweep</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Augustina Solaria</td>
+<td>Vaal Spectral Throw</td>
+<td> </td>
+<td>Leap Slam</td>
+<td>Spectral Throw</td>
+<td> </td>
+</tr>
+<tr>
+<td>Spectral Corsair</td>
+<td>Vaal Spectral Throw</td>
+<td> </td>
+<td> </td>
+<td>Spectral Throw</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Wilorin Demontamer</td>
+<td>Vaal Storm Call</td>
+<td> </td>
+<td>Ball Lightning</td>
+<td>Storm Call</td>
+<td> </td>
+</tr>
+<tr>
+<td>High Lithomancer</td>
+<td>Volatile Cascade</td>
+<td>Groundswell</td>
+<td>Implosion</td>
+<td>Shatter Strike</td>
+<td> </td>
+</tr>
+<tr>
+<td>Grazing Taurus</td>
+<td>Volatile Charge</td>
+<td> </td>
+<td>Charge</td>
+<td>Ground Churn</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Fighting Bull</td>
+<td>Volatile Charge</td>
+<td> </td>
+<td>Charge</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Voll, Emperor of Purity</td>
+<td>Volatile Charge</td>
+<td> </td>
+<td>Charged Slam</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Solaris Champion</td>
+<td>Volatile Flame</td>
+<td> </td>
+<td>Flame Strike</td>
+<td>Cleave</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Vaal Frost Guardian</td>
+<td>Volatile Leap</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Great White Beast</td>
+<td>Volatile Nova</td>
+<td>Great Beast Slam</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Pale Commander</td>
+<td>Volatile Nova</td>
+<td>Rage</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Vaal Fallen</td>
+<td>Volatile Nova</td>
+<td> </td>
+<td>Elemental Strike</td>
+<td>Elemental Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Brittle Cleric</td>
+<td>Volatile Nova</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Frozen Titan</td>
+<td>Volatile Nova</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Sun Bleached Fallen</td>
+<td>Volatile Nova</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Undying Initiate</td>
+<td>Volatile Nova</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Vault Guardian</td>
+<td>Volatile Nova</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Voll&#39;s Fallen</td>
+<td>Volatile Nova</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Shadow Archer</td>
+<td>Volatile Rain</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Maternal Rhex</td>
+<td>Volatile Screech</td>
+<td>Dash Cleave</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Wild Rhex</td>
+<td>Volatile Screech</td>
+<td>Dash Cleave</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Gneiss</td>
+<td>Volatile Slam</td>
+<td> </td>
+<td> </td>
+<td>Rollout</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Titan of the Grove</td>
+<td>Volatile Slam</td>
+<td> </td>
+<td> </td>
+<td>Rollout</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Utula, Stone and Steel</td>
+<td>Volcanic Barrage</td>
+<td>Mass Animated Swords</td>
+<td>Volcanic Slam</td>
+<td>Animated Swords</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Clearwater Strider</td>
+<td>Vortex</td>
+<td> </td>
+<td> </td>
+<td>Frostbolt</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Sawbones</td>
+<td>Vulnerability</td>
+<td>Call Cadavers</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Scrabbling Menace</td>
+<td>Vulnerability</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Brooding Tarantula</td>
+<td>Web Launch</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Weaver</td>
+<td>Web Shot</td>
+<td>Knife Barrage</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Webbed Spider</td>
+<td>Webshot</td>
+<td> </td>
+<td>Flicker Strike</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Sandworn Slaves</td>
+<td>Wind Storm</td>
+<td> </td>
+<td>Cyclone Storm</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Blightblade</td>
+<td>Withering Totem</td>
+<td>Chaotic Throw</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Sewage Crawler</td>
+<td> </td>
+<td>Acidic Shot</td>
+<td>Acidic Snipe</td>
+<td>Acidic Shot</td>
+<td>Acidic Shot</td>
+</tr>
+<tr>
+<td>Toxic Crawler</td>
+<td> </td>
+<td>Acidic Shot</td>
+<td>Acidic Snipe</td>
+<td>Acidic Shot</td>
+<td>Acidic Shot</td>
+</tr>
+<tr>
+<td>The Hundred Foot Shadow</td>
+<td> </td>
+<td>Aerial Strike</td>
+<td>Cleave</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Winged Death</td>
+<td> </td>
+<td>Aerial Strike</td>
+<td>Wind Blast</td>
+<td>Cleave</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Chimeric Croaker</td>
+<td> </td>
+<td>Arctic Barrage</td>
+<td>Arctic Breath</td>
+<td>Leap Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Callow Thug</td>
+<td> </td>
+<td>Bandit Slam</td>
+<td>Bandit Cleave</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Cave Beast</td>
+<td> </td>
+<td>Beast Slam</td>
+<td>Beast Cleave</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Forest Beast</td>
+<td> </td>
+<td>Beast Slam</td>
+<td>Beast Cleave</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Bone Cruncher</td>
+<td> </td>
+<td>Beast Slam</td>
+<td>Cleave</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Great White Bones</td>
+<td> </td>
+<td>Beast Slam</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Shrieking Witch</td>
+<td> </td>
+<td>Bellowing Screech</td>
+<td> </td>
+<td>Screech</td>
+<td> </td>
+</tr>
+<tr>
+<td>Undying Outcast</td>
+<td> </td>
+<td>Blade Spiral</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Slashed Miscreation</td>
+<td> </td>
+<td>Blade Swarm</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Spectral Scoundrel</td>
+<td> </td>
+<td>Blade Swarm</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Fleetfreak</td>
+<td> </td>
+<td>Blade Vortex</td>
+<td>Charge Forward</td>
+<td>Bone Nova</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Warped Regurgitator</td>
+<td> </td>
+<td>Blood Barrage</td>
+<td> </td>
+<td>Blood Mortar</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Erythrophagia</td>
+<td> </td>
+<td>Blood Bomb</td>
+<td> </td>
+<td>Blood Mortar</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Doedre Darktongue</td>
+<td> </td>
+<td>Blood Bombardment</td>
+<td> </td>
+<td>Blood Bomb</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Doedre the Vile</td>
+<td> </td>
+<td>Blood Bubble</td>
+<td>Blood Warp</td>
+<td>Wand Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Portentia, the Foul</td>
+<td> </td>
+<td>Blood Bubble</td>
+<td>Blood Warp</td>
+<td>Wand Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Executioner Bloodwing</td>
+<td> </td>
+<td>Blood Raven Swarm</td>
+<td>Blood Lacerate</td>
+<td>Shield Toss</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Justicar Casticus</td>
+<td> </td>
+<td>Blood Raven Swarm</td>
+<td>Blood Lacerate</td>
+<td>Shield Toss</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Gut Spiker</td>
+<td> </td>
+<td>Bone Shot</td>
+<td>Projectile Spray</td>
+<td> </td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Champion of the Hollows</td>
+<td> </td>
+<td>Boulder Crack</td>
+<td> </td>
+<td>Ground Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Bloodstained Archer</td>
+<td> </td>
+<td>Bowshot Nova</td>
+<td>Blood Barrage</td>
+<td> </td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Massier</td>
+<td> </td>
+<td>Brutal Strike</td>
+<td> </td>
+<td> </td>
+<td>Heavy Strike</td>
+</tr>
+<tr>
+<td>Calaf, Headstaver</td>
+<td> </td>
+<td>Brutal Strike</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Torchoak Grove</td>
+<td> </td>
+<td>Call Allies</td>
+<td>Molten Barrage</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Hollowskull, the Willing Host</td>
+<td> </td>
+<td>Call Parasites</td>
+<td>Chieftain Slam</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Dusk, Harbinger of Lunaris</td>
+<td> </td>
+<td>Carpet Bomb</td>
+<td>Lunar Snipe</td>
+<td>Dusk Barrage</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Sebbert, Crescent&#39;s Point</td>
+<td> </td>
+<td>Carpet Bomb</td>
+<td>Lunar Snipe</td>
+<td>Dusk Barrage</td>
+<td> </td>
+</tr>
+<tr>
+<td>Plague Retch</td>
+<td> </td>
+<td>Caustic Bomb</td>
+<td> </td>
+<td>Viper Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Volatile Poison</td>
+<td> </td>
+<td>Caustic Bombard</td>
+<td> </td>
+<td>Caustic Bomb</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Grey Plague</td>
+<td> </td>
+<td>Caustic Dive</td>
+<td>Caustic Mortar</td>
+<td>Caustic Leap</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Corrupted Spitter</td>
+<td> </td>
+<td>Caustic Spike Barrage</td>
+<td>Caustic Spikes</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Black Death, Pain Unending</td>
+<td> </td>
+<td>Chaos Mortar Barrage</td>
+<td>Caustic Lightning</td>
+<td>Chaos Balls</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Chaos Guardian</td>
+<td> </td>
+<td>Chaos Storm</td>
+<td> </td>
+<td>Chaos Cascade</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Brittle Emperor</td>
+<td> </td>
+<td>Charge</td>
+<td>Charged Slam</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Steelchaw</td>
+<td> </td>
+<td>Charge</td>
+<td> </td>
+<td>Dual Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Gnar, Eater of Carrion</td>
+<td> </td>
+<td>Charge</td>
+<td> </td>
+<td> </td>
+<td>Dual Strike</td>
+</tr>
+<tr>
+<td>Great Rhoa</td>
+<td> </td>
+<td>Charge Forward</td>
+<td>Charge Forward</td>
+<td>Thrusting Strike</td>
+<td>Lunging Bite</td>
+</tr>
+<tr>
+<td>Murk Runner</td>
+<td> </td>
+<td>Charge Forward</td>
+<td>Charge Forward</td>
+<td>Thrusting Strike</td>
+<td>Lunging Bite</td>
+</tr>
+<tr>
+<td>Rhoa Scavenger</td>
+<td> </td>
+<td>Charge Forward</td>
+<td>Charge Forward</td>
+<td>Thrusting Strike</td>
+<td>Lunging Bite</td>
+</tr>
+<tr>
+<td>Infested Rhoa</td>
+<td> </td>
+<td>Charge Forward</td>
+<td>Charge Forward</td>
+<td>Thrusting Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Dreadwheel</td>
+<td> </td>
+<td>Charge Forward</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Leif, the Swift-Handed</td>
+<td> </td>
+<td>Charged Attack</td>
+<td>Flicker Strike</td>
+<td> </td>
+<td>Frenzy</td>
+</tr>
+<tr>
+<td>Master of the Blade</td>
+<td> </td>
+<td>Charged Attack</td>
+<td>Flicker Strike</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Undying Inductor</td>
+<td> </td>
+<td>Charged Barrage</td>
+<td>Charged Mortar</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Rattling Condemned</td>
+<td> </td>
+<td>Charged Cyclone</td>
+<td> </td>
+<td>Cyclone</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Guardian of the Chimera</td>
+<td> </td>
+<td>Charged Strikes</td>
+<td>Combo Strike</td>
+<td>Flicker Lance</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Host Chieftain</td>
+<td> </td>
+<td>Chieftain Throw</td>
+<td>Mass Power</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Varhesh, Shimmering Aberration</td>
+<td> </td>
+<td>Chomp</td>
+<td>Charge</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Yugul, Reflection of Terror</td>
+<td> </td>
+<td>Chomp</td>
+<td>Charge</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Sallazzang</td>
+<td> </td>
+<td>Chrome Blades</td>
+<td>Ice Breath</td>
+<td>Iguana Projectile</td>
+<td> </td>
+</tr>
+<tr>
+<td>Spectral Legionnaire</td>
+<td> </td>
+<td>Cleave</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Blacksmith</td>
+<td> </td>
+<td>Colossal Strike</td>
+<td>Colossal Leap</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Crimson Scholar</td>
+<td> </td>
+<td>Corrupted Fireball Nova</td>
+<td> </td>
+<td>Corrupted Fireball</td>
+<td> </td>
+</tr>
+<tr>
+<td>Barkhul</td>
+<td> </td>
+<td>Cyclone</td>
+<td>Ground Churn</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Olof, Son of the Headsman</td>
+<td> </td>
+<td>Cyclone</td>
+<td>Ground Churn</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Tore, Towering Ancient</td>
+<td> </td>
+<td>Cyclone</td>
+<td>Ground Churn</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>K&#39;aj Q&#39;ura</td>
+<td> </td>
+<td>Desecrated Cyclone</td>
+<td>Demonic Cleave</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Enticer of Rot</td>
+<td> </td>
+<td>Desecrated Dead</td>
+<td> </td>
+<td> </td>
+<td>Wand Bolt</td>
+</tr>
+<tr>
+<td>Fleshrend, Grand Inquisitor</td>
+<td> </td>
+<td>Desecrated Dead</td>
+<td> </td>
+<td> </td>
+<td>Wand Bolt</td>
+</tr>
+<tr>
+<td>Witch of the Cauldron</td>
+<td> </td>
+<td>Desecrated Dead</td>
+<td> </td>
+<td> </td>
+<td>Wand Bolt</td>
+</tr>
+<tr>
+<td>Devourer</td>
+<td> </td>
+<td>Devouring Blast</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Chrome-infused Chimeral</td>
+<td> </td>
+<td>Doom Arrow</td>
+<td> </td>
+<td>Iguana Projectile</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Ironclad Decimator</td>
+<td> </td>
+<td>Double Cascade</td>
+<td>Glacial Blast</td>
+<td>Glacial Cascade</td>
+<td> </td>
+</tr>
+<tr>
+<td>Captain Aurelianus</td>
+<td> </td>
+<td>Double Projectile Strike</td>
+<td> </td>
+<td>Furious Cleaves</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Guard Captain</td>
+<td> </td>
+<td>Double Projectile Strike</td>
+<td> </td>
+<td>Furious Cleaves</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Ondar, the Betrayer</td>
+<td> </td>
+<td>Double Slash</td>
+<td>Caustic Leap</td>
+<td>Double Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Churning Titan</td>
+<td> </td>
+<td>Earthquake</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Coagulated Elemental</td>
+<td> </td>
+<td>Earthquake</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Eater of Souls</td>
+<td> </td>
+<td>Elemental Cone</td>
+<td>Nightmare Crush</td>
+<td>Nightmare Mortar</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Malachai, The Nightmare</td>
+<td> </td>
+<td>Elemental Cone</td>
+<td>Nightmare Crush</td>
+<td>Nightmare Mortar</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Nightmare&#39;s Omen</td>
+<td> </td>
+<td>Elemental Cone</td>
+<td>Nightmare Slam</td>
+<td>Degenerative Mortar</td>
+<td> </td>
+</tr>
+<tr>
+<td>Granite Eater</td>
+<td> </td>
+<td>Ember Shot</td>
+<td>Ember Snipe</td>
+<td>Ember Shot</td>
+<td>Ember Shot</td>
+</tr>
+<tr>
+<td>Hairy Bonecruncher</td>
+<td> </td>
+<td>Enduring Cry</td>
+<td>Cutting Cleave</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Flesh Sculptor</td>
+<td> </td>
+<td>Enfeebling Volatiles</td>
+<td>Desecration Detonation</td>
+<td> </td>
+<td>Wand Bolt</td>
+</tr>
+<tr>
+<td>Diabolist</td>
+<td> </td>
+<td>Enfeebling Volatiles</td>
+<td>Summon Skeletons</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Bone Sculptor</td>
+<td> </td>
+<td>Enfeebling Volatiles</td>
+<td>Summon Skeletons</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Reanimator</td>
+<td> </td>
+<td>Enfeebling Volatiles</td>
+<td> </td>
+<td> </td>
+<td>Wand Bolt</td>
+</tr>
+<tr>
+<td>Disbanded Dead</td>
+<td> </td>
+<td>Explosive Rain</td>
+<td>Explosive Barrage</td>
+<td> </td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Tunneltrap</td>
+<td> </td>
+<td>Explosive Spit</td>
+<td>Devouring Blast</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Conqueror Wurm</td>
+<td> </td>
+<td>Explosive Spit</td>
+<td>Fire Barrage</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Goatman Shaman</td>
+<td> </td>
+<td>Fire Blast</td>
+<td>Molten Shell</td>
+<td>Fireball</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Cannibal Fire-eater</td>
+<td> </td>
+<td>Fire Breath</td>
+<td>Fire Breath</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Marchak, The Betrayer</td>
+<td> </td>
+<td>Fire Decimation</td>
+<td> </td>
+<td>Caustic Burst</td>
+<td> </td>
+</tr>
+<tr>
+<td>Banner of Passion</td>
+<td> </td>
+<td>Fire Rage</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Ironclad Arsonist</td>
+<td> </td>
+<td>Fireball</td>
+<td>Fireball</td>
+<td>Fireball</td>
+<td> </td>
+</tr>
+<tr>
+<td>Flame Sentinel</td>
+<td> </td>
+<td>Fireball Barrage</td>
+<td> </td>
+<td>Splitting Fireball</td>
+<td>Forking Fire</td>
+</tr>
+<tr>
+<td>Flame Hellion</td>
+<td> </td>
+<td>Flame Barrage</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Kiln Mother</td>
+<td> </td>
+<td>Flaming Barrage</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Brittle Arsonist</td>
+<td> </td>
+<td>Flaming Barrage</td>
+<td> </td>
+<td> </td>
+<td>Projected Fire</td>
+</tr>
+<tr>
+<td>Flame Archmage</td>
+<td> </td>
+<td>Flaming Barrage</td>
+<td> </td>
+<td> </td>
+<td>Projected Fire</td>
+</tr>
+<tr>
+<td>Flame Bishop</td>
+<td> </td>
+<td>Flaming Barrage</td>
+<td> </td>
+<td> </td>
+<td>Projected Fire</td>
+</tr>
+<tr>
+<td>Flame Priest</td>
+<td> </td>
+<td>Flaming Barrage</td>
+<td> </td>
+<td> </td>
+<td>Projected Fire</td>
+</tr>
+<tr>
+<td>Fire and Fury</td>
+<td> </td>
+<td>Flaming Orbs</td>
+<td>Lava Cascade</td>
+<td>Molten Mortar</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Undying Patrician</td>
+<td> </td>
+<td>Flash Freeze</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Droolmaw</td>
+<td> </td>
+<td>Flesh Pillar</td>
+<td>Sunder</td>
+<td>Bone Lance</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Crypt Ambusher</td>
+<td> </td>
+<td>Flicker Strike</td>
+<td>Leap Slam</td>
+<td>Viper Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Ion Darkshroud, the Hungering Blade</td>
+<td> </td>
+<td>Flicker Strike</td>
+<td> </td>
+<td>Spectral Throw</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Prayer Guard</td>
+<td> </td>
+<td>Focused Fireball</td>
+<td>Rapid Fireball</td>
+<td>Fireball Wave</td>
+<td> </td>
+</tr>
+<tr>
+<td>Puruna, the Challenger</td>
+<td> </td>
+<td>Freeze Nova</td>
+<td>Tidal Surge</td>
+<td> </td>
+<td>Frost Bolt</td>
+</tr>
+<tr>
+<td>Banner of Knowledge</td>
+<td> </td>
+<td>Frost Rage</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Sand Strider</td>
+<td> </td>
+<td>Frostbolt Helix</td>
+<td> </td>
+<td>Frost Surge</td>
+<td> </td>
+</tr>
+<tr>
+<td>Sumter the Twisted</td>
+<td> </td>
+<td>Frostfire Storm</td>
+<td>Fiery Ice</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Blackguard Firemage</td>
+<td> </td>
+<td>Heated Volatiles</td>
+<td> </td>
+<td> </td>
+<td>Wand Bolt</td>
+</tr>
+<tr>
+<td>Hector Titucius, Eternal Servant</td>
+<td> </td>
+<td>Heavy Charge</td>
+<td> </td>
+<td>Combo Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Forgotten Soldier</td>
+<td> </td>
+<td>Heavy Charge</td>
+<td> </td>
+<td>Combo Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Hulking Titan</td>
+<td> </td>
+<td>Heavy Slam</td>
+<td> </td>
+<td>Rollout</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Ruins Hellion</td>
+<td> </td>
+<td>Hellion Mortar Barrage</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Knitted Horror</td>
+<td> </td>
+<td>Horror Barrage</td>
+<td>Mass Barrage</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Bleached Horror</td>
+<td> </td>
+<td>Horror Barrage</td>
+<td>Tracking Barrage</td>
+<td>Skeleton Shot</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Tangled Remains</td>
+<td> </td>
+<td>Horror Barrage</td>
+<td>Tracking Barrage</td>
+<td>Skeleton Shot</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Bazur</td>
+<td> </td>
+<td>Hover Strike</td>
+<td>Lightning Slam</td>
+<td>Empowered Hook</td>
+<td>Empowered Strike</td>
+</tr>
+<tr>
+<td>Reassembled Brutus</td>
+<td> </td>
+<td>Hover Strike</td>
+<td>Lightning Slam</td>
+<td>Empowered Hook</td>
+<td>Empowered Strike</td>
+</tr>
+<tr>
+<td>Ancient Archer</td>
+<td> </td>
+<td>Hunter&#39;s Barrage</td>
+<td> </td>
+<td>Skeletal Barrage</td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Guardian of the Hydra</td>
+<td> </td>
+<td>Hydra Arrow</td>
+<td>Doom Cascade</td>
+<td>Hydra&#39;s Fangs</td>
+<td> </td>
+</tr>
+<tr>
+<td>Oriath&#39;s Vigil</td>
+<td> </td>
+<td>Ice Cyclone</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Alpine Shaman</td>
+<td> </td>
+<td>Ice Spear Barrage</td>
+<td>Ice Spear Spray</td>
+<td>Frost Rage</td>
+<td> </td>
+</tr>
+<tr>
+<td>Brittle Shard</td>
+<td> </td>
+<td>Ice Spear Barrage</td>
+<td>Ice Spear Spray</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Frost Sentinel</td>
+<td> </td>
+<td>Ice Spear Barrage</td>
+<td> </td>
+<td>Splitting Ice Spear</td>
+<td>Forking Ice</td>
+</tr>
+<tr>
+<td>Impure Archer</td>
+<td> </td>
+<td>Impaling Barrage</td>
+<td> </td>
+<td> </td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Heartless Deserter</td>
+<td> </td>
+<td>Impaling Puncture</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Kraityn&#39;s Thrall</td>
+<td> </td>
+<td>Impaling Puncture</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Shadow Stalker</td>
+<td> </td>
+<td>Impaling Puncture</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Escaped Revenant</td>
+<td> </td>
+<td>Jolting Mortar</td>
+<td>Jolting Nova</td>
+<td>Jolt</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Stygian Revenant</td>
+<td> </td>
+<td>Jolting Mortar</td>
+<td>Jolting Nova</td>
+<td>Jolt</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Tukohama&#39;s Scout</td>
+<td> </td>
+<td>Karui Blast</td>
+<td>Karui Blast</td>
+<td>Karui Shot</td>
+<td>Karui Shot</td>
+</tr>
+<tr>
+<td>Hyrri&#39;s Sister</td>
+<td> </td>
+<td>Karui Blast</td>
+<td> </td>
+<td>Karui Shot</td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Desperate Soul</td>
+<td> </td>
+<td>Kinetic Burst</td>
+<td> </td>
+<td>Kinetic Blast</td>
+<td>Spectral Shot</td>
+</tr>
+<tr>
+<td>Lokan, The Deceiver</td>
+<td> </td>
+<td>Knife Nova</td>
+<td>Cyclone</td>
+<td>Ethereal Knives</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Dust Scrabbler</td>
+<td> </td>
+<td>Leaper Barrage</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Guardian of the Phoenix</td>
+<td> </td>
+<td>Living Firebomb</td>
+<td>Flame Burst</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Goatman Fire-raiser</td>
+<td> </td>
+<td>Magma Barrage</td>
+<td>Molten Shell</td>
+<td>Fireball</td>
+<td> </td>
+</tr>
+<tr>
+<td>Flame Mother</td>
+<td> </td>
+<td>Magma Mortar</td>
+<td>Magma Nova</td>
+<td>Magma Wave</td>
+<td> </td>
+</tr>
+<tr>
+<td>Carnage Chieftain</td>
+<td> </td>
+<td>Mass Frenzy</td>
+<td>Monkey Toss</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Stygian Silverback</td>
+<td> </td>
+<td>Mass Frenzy</td>
+<td>Monkey Toss</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Bundle of Woe</td>
+<td> </td>
+<td>Mass Summon Undead</td>
+<td> </td>
+<td>Tracking Barrage</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Filth Maw</td>
+<td> </td>
+<td>Maw Barrage</td>
+<td>Leap Slam</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Dishonoured Queen</td>
+<td> </td>
+<td>Molten Shot</td>
+<td>Molten Shot</td>
+<td>Molten Shot</td>
+<td> </td>
+</tr>
+<tr>
+<td>Necromancer</td>
+<td> </td>
+<td>Necrotic Barrage</td>
+<td>Summon Skeletons</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Lycius, Midnight&#39;s Howl</td>
+<td> </td>
+<td>Pack Rush</td>
+<td>Howl</td>
+<td>Spectral Claw</td>
+<td> </td>
+</tr>
+<tr>
+<td>The Cursed King</td>
+<td> </td>
+<td>Pack Rush</td>
+<td>Howl</td>
+<td>Spectral Claw</td>
+<td> </td>
+</tr>
+<tr>
+<td>Enraptured Beast</td>
+<td> </td>
+<td>Parasitic Slam</td>
+<td>Beast Cleave</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Rama, The Kinslayer</td>
+<td> </td>
+<td>Poison Nova</td>
+<td>Caustic Leap</td>
+<td>Desecrating Cyclone</td>
+<td>Cleave</td>
+</tr>
+<tr>
+<td>Shavronne&#39;s Gemling</td>
+<td> </td>
+<td>Powered Discharge</td>
+<td>Flicker Strike</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Undying Grappler</td>
+<td> </td>
+<td>Powered Discharge</td>
+<td>Flicker Strike</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Undying Evangelist</td>
+<td> </td>
+<td>Proximity Shield</td>
+<td> </td>
+<td>Divine Blast</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Colossal Bonestalker</td>
+<td> </td>
+<td>Quake Slam</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Q&#39;uru</td>
+<td> </td>
+<td>Rage</td>
+<td>Earthquake</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Dockhand Wraith</td>
+<td> </td>
+<td>Rage</td>
+<td>Vortex Split Shot</td>
+<td> </td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Pale Blackguard</td>
+<td> </td>
+<td>Rage</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Rhexback Spearman</td>
+<td> </td>
+<td>Rage</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Ambrosia, Daughter of Merveil</td>
+<td> </td>
+<td>Raging Firestorm</td>
+<td> </td>
+<td>Fireball</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Effigy of Fear</td>
+<td> </td>
+<td>Raven Shot</td>
+<td>Raven Call</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Bone Queen</td>
+<td> </td>
+<td>Return to Unlife</td>
+<td>Jolt</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Ruined Titan</td>
+<td> </td>
+<td>Rock Slam</td>
+<td> </td>
+<td>Rolling Charge</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Stalag Nightmare</td>
+<td> </td>
+<td>Rock Slam</td>
+<td> </td>
+<td>Rolling Charge</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Rumbling Mass</td>
+<td> </td>
+<td>Rock Slam</td>
+<td> </td>
+<td>Rollout</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Defiled Proclamation</td>
+<td> </td>
+<td>Rock Slam</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Sanguine Siren</td>
+<td> </td>
+<td>Screech Cascade</td>
+<td>Blood Mortar</td>
+<td>Screech</td>
+<td> </td>
+</tr>
+<tr>
+<td>Rotting Damned</td>
+<td> </td>
+<td>Skeletal Slam</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Thicket Hulk</td>
+<td> </td>
+<td>Slam</td>
+<td>Beast Cleave</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Riftwalker</td>
+<td> </td>
+<td>Slam</td>
+<td>Black Hole</td>
+<td>Spectral Throw</td>
+<td> </td>
+</tr>
+<tr>
+<td>Regulus, Sun&#39;s Herald</td>
+<td> </td>
+<td>Slam</td>
+<td>Leap Slam</td>
+<td>Ground Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Mirage of Bones</td>
+<td> </td>
+<td>Snipe Shot</td>
+<td>Mirror Arrow</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Solar Guard</td>
+<td> </td>
+<td>Solar Cannon</td>
+<td> </td>
+<td>Holy Fire</td>
+<td> </td>
+</tr>
+<tr>
+<td>Experimented Dead</td>
+<td> </td>
+<td>Soul Eruption</td>
+<td>Soul Bombardment</td>
+<td>Soul Barrage</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Noble Dead</td>
+<td> </td>
+<td>Soul Eruption</td>
+<td>Soul Bombardment</td>
+<td>Soul Barrage</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Rhys of Abram</td>
+<td> </td>
+<td>Soul Seeker</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Merveil&#39;s Daughter</td>
+<td> </td>
+<td>Spawn Swarm</td>
+<td> </td>
+<td>Sea Surge</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Drek, Apex Hunter</td>
+<td> </td>
+<td>Spear Barrage</td>
+<td> </td>
+<td>Spear</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Greust, Lord of the Forest</td>
+<td> </td>
+<td>Spear Barrage</td>
+<td> </td>
+<td>Spear</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Bone Warden</td>
+<td> </td>
+<td>Spectral Call</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Sparking Bones</td>
+<td> </td>
+<td>Spectral Call</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Hybrid Widow</td>
+<td> </td>
+<td>Spider Mortar</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Hybrid Arachnid</td>
+<td> </td>
+<td>Spider Slam</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Serpentine Construct</td>
+<td> </td>
+<td>Spike Barrage</td>
+<td> </td>
+<td>Snake Spikes</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Ash Harvester</td>
+<td> </td>
+<td>Spinning Scythe</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Temple Ward</td>
+<td> </td>
+<td>Spiralling Arsenal</td>
+<td>Charge Forward</td>
+<td>Spectral Arsenal</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Brittle Archer</td>
+<td> </td>
+<td>Splitting Barrage</td>
+<td> </td>
+<td> </td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Sewer Drifter</td>
+<td> </td>
+<td>Squid Ink</td>
+<td> </td>
+<td>Blinding Gaze</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Obsidian Eater</td>
+<td> </td>
+<td>Static Shot</td>
+<td>Static Snipe</td>
+<td>Static Shot</td>
+<td>Static Shot</td>
+</tr>
+<tr>
+<td>The Basilisk</td>
+<td> </td>
+<td>Stone Gaze</td>
+<td>Flame Breath</td>
+<td>Iguana Projectile</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Gorgon</td>
+<td> </td>
+<td>Stone Gaze</td>
+<td>Flame Breath</td>
+<td>Iguana Projectile</td>
+<td> </td>
+</tr>
+<tr>
+<td>Gravel Eater</td>
+<td> </td>
+<td>Stone Shot</td>
+<td>Stone Snipe</td>
+<td>Stone Shot</td>
+<td>Stone Shot</td>
+</tr>
+<tr>
+<td>Rock Spitter</td>
+<td> </td>
+<td>Stone Shot</td>
+<td>Stone Snipe</td>
+<td>Stone Shot</td>
+<td>Stone Shot</td>
+</tr>
+<tr>
+<td>Shavronne the Sickening</td>
+<td> </td>
+<td>Storm Burst</td>
+<td>Ball Lightning</td>
+<td>Charged Slam</td>
+<td> </td>
+</tr>
+<tr>
+<td>Shavronne, Unbound</td>
+<td> </td>
+<td>Storm Burst</td>
+<td>Ball Lightning</td>
+<td>Charged Slam</td>
+<td> </td>
+</tr>
+<tr>
+<td>Arwyn, the Houndmaster</td>
+<td> </td>
+<td>Storm Burst</td>
+<td>Stormwhip</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Overseer Krow</td>
+<td> </td>
+<td>Storm Burst</td>
+<td>Stormwhip</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Hephaeus, The Hammer</td>
+<td> </td>
+<td>Sunder</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Vilenta</td>
+<td> </td>
+<td>Sunder Barrage</td>
+<td>Mortar Dash</td>
+<td>Gas Mortar</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Shrieker</td>
+<td> </td>
+<td>Supersonic Screech</td>
+<td> </td>
+<td>Bat Mortar</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Nassar, Lion of the Seas</td>
+<td> </td>
+<td>Surging Sands</td>
+<td>Brine Crush</td>
+<td>Cleaving Claw</td>
+<td> </td>
+</tr>
+<tr>
+<td>Tsoagoth, The Brine King</td>
+<td> </td>
+<td>Surging Sands</td>
+<td>Brine Crush</td>
+<td>Cleaving Claw</td>
+<td> </td>
+</tr>
+<tr>
+<td>Escaped Rhex</td>
+<td> </td>
+<td>Tail Whip</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Maligaro, the Artist</td>
+<td> </td>
+<td>Teleport Slam</td>
+<td>Telekinetic Blades</td>
+<td>Combo Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Visceris</td>
+<td> </td>
+<td>Teleport Slam</td>
+<td>Telekinetic Blades</td>
+<td>Combo Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Amarissa, Daughter of Merveil</td>
+<td> </td>
+<td>Thunder Nova</td>
+<td> </td>
+<td>Spark Nova</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Blackguard Arcmage</td>
+<td> </td>
+<td>Thunder Rage</td>
+<td>Arc Spire</td>
+<td> </td>
+<td>Wand Bolt</td>
+</tr>
+<tr>
+<td>Banner of Action</td>
+<td> </td>
+<td>Thunder Rage</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Vaulting Croaker</td>
+<td> </td>
+<td>Tracking Flame</td>
+<td> </td>
+<td>Leap Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Chrome-infused Croaker</td>
+<td> </td>
+<td>Tracking Frost</td>
+<td>Chilling Orbs</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Chrome-touched Croaker</td>
+<td> </td>
+<td>Tracking Frost</td>
+<td> </td>
+<td>Leap Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Pocked Giant</td>
+<td> </td>
+<td>Tracking Sunder</td>
+<td>Boulder Crack</td>
+<td>Ground Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Mountain Fragment</td>
+<td> </td>
+<td>Tracking Sunder</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Bin&#39;aia, Crimson Rain</td>
+<td> </td>
+<td>Vaal Flameblast</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Crusher of Gladiators</td>
+<td> </td>
+<td>Vaal Ground Slam</td>
+<td>Charge</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Stonebeak, Battle Fowl</td>
+<td> </td>
+<td>Vaal Rain of Arrows</td>
+<td>Split Arrow</td>
+<td>Caustic Arrow</td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Xixic, High Necromancer</td>
+<td> </td>
+<td>Vaal Skeletons</td>
+<td>Necrotic Orbs</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Pallias</td>
+<td> </td>
+<td>Vaal Summon Skeletons</td>
+<td> </td>
+<td>Spectral Throw</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Broken Prince</td>
+<td> </td>
+<td>Vanish</td>
+<td>Demonic Reave</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Black Death</td>
+<td> </td>
+<td>Viper Strike</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Assault Ribbon</td>
+<td> </td>
+<td>Volatile Charge</td>
+<td>Fluttering Charge</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Defiler</td>
+<td> </td>
+<td>Volatile Elements</td>
+<td>Summon Skeletons</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Ash Prophet</td>
+<td> </td>
+<td>Volatile Flame</td>
+<td>Skeletal Embers</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Death Bishop</td>
+<td> </td>
+<td>Volatile Frost</td>
+<td>Summon Skeletons</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Sin Lord</td>
+<td> </td>
+<td>Volatile Lightning</td>
+<td>Summon Skeletons</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Thunder Whisperer</td>
+<td> </td>
+<td>Volatile Lightning</td>
+<td>Summon Skeletons</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Sin Master</td>
+<td> </td>
+<td>Volatile Mark</td>
+<td>Mass Raise Undead</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Oak&#39;s Devoted</td>
+<td> </td>
+<td>Volatile Mark</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Merveil&#39;s Retainer</td>
+<td> </td>
+<td>Volatile Swarm</td>
+<td> </td>
+<td>Sea Surge</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Vexing Archer</td>
+<td> </td>
+<td>Volatile Swarm</td>
+<td> </td>
+<td> </td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Calderus</td>
+<td> </td>
+<td>Volcanic Barrage</td>
+<td>Volcanic Slam</td>
+<td>Animated Swords</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Tahsin, Warmaker</td>
+<td> </td>
+<td>Volcanic Slam</td>
+<td>Volcanic Sunder</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Tukohama, Karui God of War</td>
+<td> </td>
+<td>Volcanic Slam</td>
+<td>Volcanic Sunder</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Faun</td>
+<td> </td>
+<td>Volcanic Sunder</td>
+<td>Lava Leap</td>
+<td>Molten Strike</td>
+<td> </td>
+</tr>
+<tr>
+<td>Bone Husk</td>
+<td> </td>
+<td>Wall of Bones</td>
+<td>Bone Cannon Barrage</td>
+<td>Bone Cannon Multishot</td>
+<td>Bone Cannon</td>
+</tr>
+<tr>
+<td>Damoi Tui</td>
+<td> </td>
+<td>Warlord&#39;s Mark</td>
+<td>Saw Storm</td>
+<td>Leap Slam</td>
+<td>Cleave</td>
+</tr>
+<tr>
+<td>Shock and Horror</td>
+<td> </td>
+<td>Warp Totems</td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Morgrants, The Deafening</td>
+<td> </td>
+<td>Wild Spectral Volley</td>
+<td>Wild Spectral Barrage</td>
+<td>Wild Spectral Throw</td>
+<td> </td>
+</tr>
+<tr>
+<td>Hatchling</td>
+<td> </td>
+<td> </td>
+<td>Arachnid Barrage</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Refinery Construct</td>
+<td> </td>
+<td> </td>
+<td>Arc</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Wide-eyed Assemblage</td>
+<td> </td>
+<td> </td>
+<td>Ball Lightning</td>
+<td> </td>
+<td>Eye Bolt</td>
+</tr>
+<tr>
+<td>Wandering Eye</td>
+<td> </td>
+<td> </td>
+<td>Ball Lightning Spray</td>
+<td>Ball Lightning</td>
+<td>Eye Bolt</td>
+</tr>
+<tr>
+<td>Orra Greengate</td>
+<td> </td>
+<td> </td>
+<td>Barrage</td>
+<td>Rain of Arrows</td>
+<td>Frenzy</td>
+</tr>
+<tr>
+<td>Telvar, the Inebriated</td>
+<td> </td>
+<td> </td>
+<td>Barrel Toss</td>
+<td>Alchemy Bomb</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Armour Cruncher</td>
+<td> </td>
+<td> </td>
+<td>Beast Cleave</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Shaggy Monstrosity</td>
+<td> </td>
+<td> </td>
+<td>Beast Cleave</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Maligaro&#39;s Passion</td>
+<td> </td>
+<td> </td>
+<td>Blight</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Soulless Watcher</td>
+<td> </td>
+<td> </td>
+<td>Blinding Gaze</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Doedre the Defiler</td>
+<td> </td>
+<td> </td>
+<td>Blood Bomb</td>
+<td>Wand Strike</td>
+<td> </td>
+</tr>
+<tr>
+<td>Doedre, Darksoul</td>
+<td> </td>
+<td> </td>
+<td>Blood Bomb</td>
+<td>Wand Strike</td>
+<td> </td>
+</tr>
+<tr>
+<td>Unravelling Horror</td>
+<td> </td>
+<td> </td>
+<td>Bone Blast Rain</td>
+<td>Skeleton Shot</td>
+<td> </td>
+</tr>
+<tr>
+<td>Pocked Behemoth</td>
+<td> </td>
+<td> </td>
+<td>Boulder Crack</td>
+<td>Ground Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Pocked Goliath</td>
+<td> </td>
+<td> </td>
+<td>Boulder Crack</td>
+<td>Ground Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Legius Garhall</td>
+<td> </td>
+<td> </td>
+<td>Burning Leap</td>
+<td>Cleave</td>
+<td>Double Strike</td>
+</tr>
+<tr>
+<td>Forest of Flames</td>
+<td> </td>
+<td> </td>
+<td>Call Allies</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Devout Dead</td>
+<td> </td>
+<td> </td>
+<td>Caustic Bomb</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Berrots, The Breaker</td>
+<td> </td>
+<td> </td>
+<td>Caustic Explosion</td>
+<td>Ice Trap</td>
+<td> </td>
+</tr>
+<tr>
+<td>Queen of the Great Tangle</td>
+<td> </td>
+<td> </td>
+<td>Caustic Knives</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Spinner of False Hope</td>
+<td> </td>
+<td> </td>
+<td>Caustic Knives</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Maligaro&#39;s Muse</td>
+<td> </td>
+<td> </td>
+<td>Caustic Lightning Barrage</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Aggravated Wound</td>
+<td> </td>
+<td> </td>
+<td>Caustic Mortar</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Void Remnant</td>
+<td> </td>
+<td> </td>
+<td>Celestial Sphere</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Avalanche Rider</td>
+<td> </td>
+<td> </td>
+<td>Charge</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Bone Rhoa</td>
+<td> </td>
+<td> </td>
+<td>Charge Forward</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Corrupted Rhoa</td>
+<td> </td>
+<td> </td>
+<td>Charge Forward</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Thunder Priest</td>
+<td> </td>
+<td> </td>
+<td>Charged Nova</td>
+<td> </td>
+<td>Projected Lightning</td>
+</tr>
+<tr>
+<td>Captain Arteri</td>
+<td> </td>
+<td> </td>
+<td>Cleave</td>
+<td>Double Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Tide Strider</td>
+<td> </td>
+<td> </td>
+<td>Cleaving Frost</td>
+<td>Crashing Wave</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Shield Crab</td>
+<td> </td>
+<td> </td>
+<td>Crab Slam</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Bear Acolyte</td>
+<td> </td>
+<td> </td>
+<td>Crushing Strike</td>
+<td>Beastial Cleave</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Ralakesh&#39;s Claw</td>
+<td> </td>
+<td> </td>
+<td>Crushing Strike</td>
+<td>Beastial Cleave</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Kitava Zealot</td>
+<td> </td>
+<td> </td>
+<td>Cultist Lancing Steel</td>
+<td>Cultist Reave</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Litanius, the Black Prayer</td>
+<td> </td>
+<td> </td>
+<td>Curse Nova</td>
+<td>Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Pagan Bishop of Agony</td>
+<td> </td>
+<td> </td>
+<td>Curse Nova</td>
+<td>Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Window Shard</td>
+<td> </td>
+<td> </td>
+<td>Cyclone</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Living Memorial</td>
+<td> </td>
+<td> </td>
+<td>Desecrated Charge</td>
+<td>Animate Weapon</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Colossus Crusher</td>
+<td> </td>
+<td> </td>
+<td>Earthquake</td>
+<td>Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Doedre&#39;s Ichor</td>
+<td> </td>
+<td> </td>
+<td>Earthquake</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>It That Fell</td>
+<td> </td>
+<td> </td>
+<td>Earthquake</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Carius, the Unnatural</td>
+<td> </td>
+<td> </td>
+<td>Earthquake Cascade</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Twisted Effigy</td>
+<td> </td>
+<td> </td>
+<td>Earthquake Cascade</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Draconarius Wilhelm Flamebrand</td>
+<td> </td>
+<td> </td>
+<td>Fiery Leap</td>
+<td>Dragon Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Oriath&#39;s Vengeance</td>
+<td> </td>
+<td> </td>
+<td>Fiery Leap</td>
+<td>Dragon Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Auriot</td>
+<td> </td>
+<td> </td>
+<td>Fire Bombs</td>
+<td>Ice Bombs</td>
+<td>Dual Strike</td>
+</tr>
+<tr>
+<td>Pileah, Burning Corpse</td>
+<td> </td>
+<td> </td>
+<td>Fire Mortar</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Rotten Matriarch</td>
+<td> </td>
+<td> </td>
+<td>Fire Mortar</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Scalding Arachnid</td>
+<td> </td>
+<td> </td>
+<td>Fire Strike</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Solarsworn Archmage</td>
+<td> </td>
+<td> </td>
+<td>Fireball</td>
+<td>Meteor Blast</td>
+<td>Wand Bolt</td>
+</tr>
+<tr>
+<td>Solar Elemental</td>
+<td> </td>
+<td> </td>
+<td>Fireball Nova</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Voidbearer</td>
+<td> </td>
+<td> </td>
+<td>Flame Breath</td>
+<td>Flame Breath</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Host Adder</td>
+<td> </td>
+<td> </td>
+<td>Flame Spit</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Night Adder</td>
+<td> </td>
+<td> </td>
+<td>Flame Spit</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Arakaali&#39;s Daughter</td>
+<td> </td>
+<td> </td>
+<td>Flicker Strike</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Cursed Mariner</td>
+<td> </td>
+<td> </td>
+<td>Flicker Strike</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Leaping Spider</td>
+<td> </td>
+<td> </td>
+<td>Flicker Strike</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Vendigo</td>
+<td> </td>
+<td> </td>
+<td>Flicker Strike</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Undying Degenerate</td>
+<td> </td>
+<td> </td>
+<td>Freezing Barrage</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Sandworn Watchman</td>
+<td> </td>
+<td> </td>
+<td>Frost Blades</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Lunaris Champion</td>
+<td> </td>
+<td> </td>
+<td>Frost Dash</td>
+<td>Ice Crash</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Lunaris Elite</td>
+<td> </td>
+<td> </td>
+<td>Frost Dash</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Merveil&#39;s Blessed</td>
+<td> </td>
+<td> </td>
+<td>Frostbolt Barrage</td>
+<td>Sea Surge</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Glace</td>
+<td> </td>
+<td> </td>
+<td>Glacial Cascade</td>
+<td>Ice Spear</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Crashing Wave</td>
+<td> </td>
+<td> </td>
+<td>Greater Vortex</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Kole</td>
+<td> </td>
+<td> </td>
+<td>Ground Slam</td>
+<td>Hook</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Pocked Miner</td>
+<td> </td>
+<td> </td>
+<td>Ground Slam</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Pocked Plunderer</td>
+<td> </td>
+<td> </td>
+<td>Ground Slam</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Ancient Bonestalker</td>
+<td> </td>
+<td> </td>
+<td>Ground Strike</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Brittle Thief</td>
+<td> </td>
+<td> </td>
+<td>Ground Strike</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Rattling Bones</td>
+<td> </td>
+<td> </td>
+<td>Ground Strike</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Burrower</td>
+<td> </td>
+<td> </td>
+<td>Hammer Barrage</td>
+<td>Hammer Throw</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Crawler</td>
+<td> </td>
+<td> </td>
+<td>Hammer Barrage</td>
+<td>Hammer Throw</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Tunneler</td>
+<td> </td>
+<td> </td>
+<td>Hammer Barrage</td>
+<td>Hammer Throw</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Boar Acolyte</td>
+<td> </td>
+<td> </td>
+<td>Heavy Charge</td>
+<td>Reave</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Ralakesh&#39;s Tusk</td>
+<td> </td>
+<td> </td>
+<td>Heavy Charge</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Moontouched Zealot</td>
+<td> </td>
+<td> </td>
+<td>Ice Blast</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Chromatic Gargoyle</td>
+<td> </td>
+<td> </td>
+<td>Ice Leap</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Chrometouched Gargoyle</td>
+<td> </td>
+<td> </td>
+<td>Ice Leap</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Thraxia</td>
+<td> </td>
+<td> </td>
+<td>Jolt</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Forgotten Warrior</td>
+<td> </td>
+<td> </td>
+<td>Karui Blast</td>
+<td>Burning Arrow</td>
+<td> </td>
+</tr>
+<tr>
+<td>Fury Hound</td>
+<td> </td>
+<td> </td>
+<td>Lava Charge</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Raihara, Tukohama&#39;s Loyal</td>
+<td> </td>
+<td> </td>
+<td>Lava Charge</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>War Hound</td>
+<td> </td>
+<td> </td>
+<td>Lava Charge</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Freezing Wolf</td>
+<td> </td>
+<td> </td>
+<td>Leap Slam</td>
+<td>Sunder</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Corrupted Arach</td>
+<td> </td>
+<td> </td>
+<td>Leap Slam</td>
+<td>Viper Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Crypt Weaver</td>
+<td> </td>
+<td> </td>
+<td>Leap Slam</td>
+<td>Viper Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Lurking Venom</td>
+<td> </td>
+<td> </td>
+<td>Leap Slam</td>
+<td>Viper Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Mutant Arach</td>
+<td> </td>
+<td> </td>
+<td>Leap Slam</td>
+<td>Viper Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Mindless Scavenger</td>
+<td> </td>
+<td> </td>
+<td>Leap Slam</td>
+<td>Vulture Mortar</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Torr Olgosso</td>
+<td> </td>
+<td> </td>
+<td>Leap Slam</td>
+<td> </td>
+<td>Double Strike</td>
+</tr>
+<tr>
+<td>Goatman Stomper</td>
+<td> </td>
+<td> </td>
+<td>Leap Slam</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Hill Devil</td>
+<td> </td>
+<td> </td>
+<td>Leap Slam</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Rek&#39;tar, the Breaker</td>
+<td> </td>
+<td> </td>
+<td>Leap Slam</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Rotting Vulture</td>
+<td> </td>
+<td> </td>
+<td>Leap Slam</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Shredder of Gladiators</td>
+<td> </td>
+<td> </td>
+<td>Leap Slam</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Vicious Parasite</td>
+<td> </td>
+<td> </td>
+<td>Leap Slam</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Thunder Thrall</td>
+<td> </td>
+<td> </td>
+<td>Lightning Barrage</td>
+<td>Lightning Arrow</td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Undying Aristocrat</td>
+<td> </td>
+<td> </td>
+<td>Lightning Burst</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Shavronne&#39;s Vision</td>
+<td> </td>
+<td> </td>
+<td>Lightning Mortar</td>
+<td> </td>
+<td>Lightning Tendrils</td>
+</tr>
+<tr>
+<td>Undying Operator</td>
+<td> </td>
+<td> </td>
+<td>Lightning Orbs</td>
+<td>Static Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Gisale, Thought Thief</td>
+<td> </td>
+<td> </td>
+<td>Lightning Tendrils</td>
+<td>Thunder Ball</td>
+<td> </td>
+</tr>
+<tr>
+<td>Excellis Aurafix</td>
+<td> </td>
+<td> </td>
+<td>Lightning Traps</td>
+<td>Fire Bomb</td>
+<td> </td>
+</tr>
+<tr>
+<td>Musky &quot;Two-Eyes&quot; Grenn</td>
+<td> </td>
+<td> </td>
+<td>Lightning Warp</td>
+<td>Shock Nova</td>
+<td>Lightning Strike</td>
+</tr>
+<tr>
+<td>Dusk Horror</td>
+<td> </td>
+<td> </td>
+<td>Lunar Frost Blast</td>
+<td>Lunar Whip</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Blood Progenitor</td>
+<td> </td>
+<td> </td>
+<td>Monkey Slam</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Blood Chieftain</td>
+<td> </td>
+<td> </td>
+<td>Monkey Toss</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Ravenous Parasite</td>
+<td> </td>
+<td> </td>
+<td>Parasitic Slam</td>
+<td>Parasitic Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Nightwane</td>
+<td> </td>
+<td> </td>
+<td>Pinpoint Shot</td>
+<td> </td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Virulent Spider</td>
+<td> </td>
+<td> </td>
+<td>Poison Barrage</td>
+<td>Viper Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Avatar of the Huntress</td>
+<td> </td>
+<td> </td>
+<td>Puncture Trap</td>
+<td>Barrage</td>
+<td> </td>
+</tr>
+<tr>
+<td>Spectral Bowman</td>
+<td> </td>
+<td> </td>
+<td>Puncturing Arrow</td>
+<td> </td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Pitbull Demon</td>
+<td> </td>
+<td> </td>
+<td>Rage</td>
+<td>Dual Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Vicious Hound</td>
+<td> </td>
+<td> </td>
+<td>Rage</td>
+<td>Dual Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Pirate Treasure</td>
+<td> </td>
+<td> </td>
+<td>Rollout</td>
+<td>Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Hollow Lady</td>
+<td> </td>
+<td> </td>
+<td>Shard Burst</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Vakali Totem</td>
+<td> </td>
+<td> </td>
+<td>Shard Nova</td>
+<td>Ice Shard</td>
+<td> </td>
+</tr>
+<tr>
+<td>Ancient Construct</td>
+<td> </td>
+<td> </td>
+<td>Shardshot</td>
+<td> </td>
+<td>Shardshot</td>
+</tr>
+<tr>
+<td>Vaal Construct</td>
+<td> </td>
+<td> </td>
+<td>Shardshot</td>
+<td> </td>
+<td>Shardshot</td>
+</tr>
+<tr>
+<td>Nightbringer Lucius</td>
+<td> </td>
+<td> </td>
+<td>Shield Charge</td>
+<td>Ice Crash</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Drought-Maddened Rhoa</td>
+<td> </td>
+<td> </td>
+<td>Shield Charge</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Skullbeak</td>
+<td> </td>
+<td> </td>
+<td>Shield Charge</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Thena Moga, the Crimson Storm</td>
+<td> </td>
+<td> </td>
+<td>Shield Charge</td>
+<td> </td>
+<td>Static Strike</td>
+</tr>
+<tr>
+<td>Flame Champion</td>
+<td> </td>
+<td> </td>
+<td>Shield Toss</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Frost Champion</td>
+<td> </td>
+<td> </td>
+<td>Shield Toss</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Thunder Guardian</td>
+<td> </td>
+<td> </td>
+<td>Shield Toss</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Thunderskull</td>
+<td> </td>
+<td> </td>
+<td>Shock Nova</td>
+<td> </td>
+<td>Spark</td>
+</tr>
+<tr>
+<td>Bearded Shaman</td>
+<td> </td>
+<td> </td>
+<td>Shocking Nova</td>
+<td>Spark Nova</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Crypt Stalker</td>
+<td> </td>
+<td> </td>
+<td>Snake Spit</td>
+<td>Puncture</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Solarsworn Infernomage</td>
+<td> </td>
+<td> </td>
+<td>Solar Flare</td>
+<td> </td>
+<td>Wand Bolt</td>
+</tr>
+<tr>
+<td>Belcer, the Pirate Lord</td>
+<td> </td>
+<td> </td>
+<td>Spectral Barrage</td>
+<td>Spectral Weapon</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Spectral Swashbuckler</td>
+<td> </td>
+<td> </td>
+<td>Spectral Barrage</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Gluttonous Gull</td>
+<td> </td>
+<td> </td>
+<td>Spew Blood</td>
+<td> </td>
+<td>Lunging Bite</td>
+</tr>
+<tr>
+<td>Avian Retch</td>
+<td> </td>
+<td> </td>
+<td>Spew Blood</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Spindle Spider</td>
+<td> </td>
+<td> </td>
+<td>Spider Barrage</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Cave Skitterer</td>
+<td> </td>
+<td> </td>
+<td>Spider Spit</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Spine Serpent</td>
+<td> </td>
+<td> </td>
+<td>Spine Barrage</td>
+<td> </td>
+<td>Spine Shot</td>
+</tr>
+<tr>
+<td>Sand Serpent</td>
+<td> </td>
+<td> </td>
+<td>Spine Shot</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Barb Serpent</td>
+<td> </td>
+<td> </td>
+<td>Spine Spray</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Enthralled Enforcer</td>
+<td> </td>
+<td> </td>
+<td>Sunder</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Oriath Enforcer</td>
+<td> </td>
+<td> </td>
+<td>Sunder</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Primal One</td>
+<td> </td>
+<td> </td>
+<td>Sunder</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Mad Gladiator</td>
+<td> </td>
+<td> </td>
+<td>Sword Toss</td>
+<td>Sword Toss</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Riptide</td>
+<td> </td>
+<td> </td>
+<td>Tidal Surge</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Weathered Watchman</td>
+<td> </td>
+<td> </td>
+<td>Tornado Rain</td>
+<td>Tornado Shot</td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Merciless Killer</td>
+<td> </td>
+<td> </td>
+<td>Tornado Shot</td>
+<td> </td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Fragment of Winter</td>
+<td> </td>
+<td> </td>
+<td>Treacherous Ground</td>
+<td>Ice Spear</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>The Arbiter of Knowledge</td>
+<td> </td>
+<td> </td>
+<td>Turbulent Winds</td>
+<td>Book Throw</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Bringer of Souls</td>
+<td> </td>
+<td> </td>
+<td>Unstable Skeletons</td>
+<td>Summon Skeletons</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Infested Tunnelfiend</td>
+<td> </td>
+<td> </td>
+<td>Ursa Mortar</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Infested Ursa</td>
+<td> </td>
+<td> </td>
+<td>Ursa Mortar</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Plummeting Ursa</td>
+<td> </td>
+<td> </td>
+<td>Ursa Mortar</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Tunnelfiend</td>
+<td> </td>
+<td> </td>
+<td>Ursa Mortar</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Woods Ursa</td>
+<td> </td>
+<td> </td>
+<td>Ursa Mortar</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Sewer Goliath</td>
+<td> </td>
+<td> </td>
+<td>Vile Slam</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Carrion Queen</td>
+<td> </td>
+<td> </td>
+<td>Volatile Crawlers</td>
+<td>Firespit Burst</td>
+<td>Firespit</td>
+</tr>
+<tr>
+<td>Carrion Burrower</td>
+<td> </td>
+<td> </td>
+<td>Volatile Crawlers</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Carrion Swarmer</td>
+<td> </td>
+<td> </td>
+<td>Volatile Crawlers</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Scum Crawler</td>
+<td> </td>
+<td> </td>
+<td>Volatile Crawlers</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Crashing Brine</td>
+<td> </td>
+<td> </td>
+<td>Vortex</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Flood Strider</td>
+<td> </td>
+<td> </td>
+<td>Vortex</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Labourer Wraith</td>
+<td> </td>
+<td> </td>
+<td>Vortex Split Shot</td>
+<td> </td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Holy Water</td>
+<td> </td>
+<td> </td>
+<td>Water Burst</td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Invari, The Bloodshaper</td>
+<td> </td>
+<td> </td>
+<td>Whirling Blades</td>
+<td>Gore Cascade</td>
+<td> </td>
+</tr>
+<tr>
+<td>Purge Hound</td>
+<td> </td>
+<td> </td>
+<td>Whirling Dash</td>
+<td>Rushing Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Spitting Parasite</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Acidic Spit</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Tukohama&#39;s Warrior</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Ancestral Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Cavern Drifter</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Blinding Gaze</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Crimson Ichor</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Blood Sunder</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Rhexback Raider</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Bow Spray</td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Burning Bowman</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Burning Arrow</td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Plagued Bowman</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Caustic Arrow</td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Alira&#39;s Deadeye</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Caustic Arrow</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Brinecrack</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Charged Leap</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Blackguard Avenger</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Cleave</td>
+<td>Double Strike</td>
+</tr>
+<tr>
+<td>Rakango</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Cleave</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Triskeriaki</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Cleave</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Blackguard Elite</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Crushing Charge</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Praetorian Guard</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Crushing Charge</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Tunnelworm</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Devouring Blast</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Solaris Elite</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Double Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Vaal Slayer</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Elemental Strike</td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Colossal Vaal Fallen</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Elemental Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Vaal Gargantuan</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Elemental Strike</td>
+<td> </td>
+</tr>
+<tr>
+<td>Rhodion</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Essence Drain</td>
+<td> </td>
+</tr>
+<tr>
+<td>Vault Hunter</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Frenzied Barrage</td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Lunarsworn Wintermage</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Glacial Cascade</td>
+<td>Wand Bolt</td>
+</tr>
+<tr>
+<td>Bleak Aspirant</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Ice Crash</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Frost Guardian</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Ice Crash</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Chrome-touched Chimeral</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Iguana Projectile</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Feral Chimeral</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Iguana Projectile</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Brittle Bandit</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Impaling Puncture</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Messenger of the Hollows</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lantern Toss</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Bearded Devil</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Leap Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Fetid Maw</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Leap Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Sand Leaper</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Leap Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Sandy Lookout</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lightning Arrow</td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Augmented Dead</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lightning Warp</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Shocked Miscreation</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lightning Warp</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Shavronne&#39;s Greed</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lightning Wave</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Thunder Keeper</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lightning Wave</td>
+<td>Projected Lightning</td>
+</tr>
+<tr>
+<td>Crazed Driver</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lightning Whip</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Lowlands Hopper</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lightning Whip</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Slave Driver</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lightning Whip</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Whipping Miscreation</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Whip</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Brittle Bleeder</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Maiming Puncture</td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Flame Guardian</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Molten Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Scorched Guard</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Molten Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Blood Ape</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Monkey Toss</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Carnage Ape</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Monkey Toss</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Parasite</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Parasitic Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Dread Primate</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Primal Throw</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Arranged Anatomy</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Puncture</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Dune Hellion</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Puncture</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Gut Flayer</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Puncture</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Undying Impaler</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Puncture</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Steelpoint the Avenger</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Rain of Arrows</td>
+<td>Split Arrow</td>
+</tr>
+<tr>
+<td>Barrow Ape</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Rock Toss</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Stygian Ape</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Rock Toss</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Cinder Elemental</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Rolling Flames</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Living Fury</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Rolling Flames</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Rubble Golem</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Rollout</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Screecher</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Screech</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Howler</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Screech Mortar</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Merveil&#39;s Favoured</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Sea Surge</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Tentacle Miscreation</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Shard Burst</td>
+<td> </td>
+</tr>
+<tr>
+<td>Dessicated Maraketh</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Foreman</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Hill Fragment</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Hill Remnant</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Hill Shard</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Stinking Undying</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Undying Untouchable</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Handmaiden</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Slam</td>
+<td> </td>
+</tr>
+<tr>
+<td>Acid Slitherer</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Snake Spit</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Sparking Mage</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Spark</td>
+<td>Projected Lightning</td>
+</tr>
+<tr>
+<td>Spectral Officer</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Spectral Throw</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Ink Spinner</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Spider Barrage</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Shavronne&#39;s Legacy</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Static Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Black Scorpion</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Sunder</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Predatory Scorpion</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Sunder</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Sand Scorpion</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Sunder</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Snow Wolf</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Sunder</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Paradisae Venenum</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Suppressing Barrage</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Plumed Chimeral</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Suppressing Barrage</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Bringer of Blood</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Sword Toss</td>
+<td>Cleave</td>
+</tr>
+<tr>
+<td>Galvanic Ribbon</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Tethered Arc</td>
+<td>Tethered Arc</td>
+</tr>
+<tr>
+<td>Bleached Crawler</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Thrusting Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Enraptured Crab</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Thrusting Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Infested Crab</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Thrusting Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Infested Crawler</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Thrusting Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Kira, Servant of Garukhan</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Thrusting Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Preethi, Eye-Pecker</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Thrusting Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Risen Gladiator</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Thrusting Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Savage Crab</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Thrusting Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Twisted Justicar</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Unrighteous Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Noxious Tarantula</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Viper Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Rooster Fiend</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Viper Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Venomous Spawn</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Viper Strike</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Archer Statue</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Vortex Shot</td>
+<td> </td>
+</tr>
+<tr>
+<td>Infested Vulture</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Vulture Mortar</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Tolman, the Exhumer</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Zombie Slam</td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Bonewarped Archer</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Brittle Longshoreman</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Brittle Lookout</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Callow Sniper</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Phantom Occultist</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Timeless Hunter</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Treacherous Deserter</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Bowshot</td>
+</tr>
+<tr>
+<td>Doedre&#39;s Torment</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Chaos Screech</td>
+</tr>
+<tr>
+<td>Vaal Frostguard</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Coldbolt</td>
+</tr>
+<tr>
+<td>K&#39;aj Y&#39;ara&#39;az</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Demonic Strike</td>
+</tr>
+<tr>
+<td>Ancient Sentry Apparatus</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Double Shardshot</td>
+</tr>
+<tr>
+<td>Frost Keeper</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Frostbolt</td>
+</tr>
+<tr>
+<td>Champion of Frost</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Glacial Hammer</td>
+</tr>
+<tr>
+<td>Imperator Stantinus Bitterblade </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Ice Cyclone</td>
+</tr>
+<tr>
+<td>Lunaris Concubine</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Ice Spikes</td>
+</tr>
+<tr>
+<td>Frost Harbinger</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Icebolt</td>
+</tr>
+<tr>
+<td>Flame Harbinger</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Projected Fire</td>
+</tr>
+<tr>
+<td>Incinerated Mage</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Projected Fire</td>
+</tr>
+<tr>
+<td>Thunder Champion</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Projected Lightning</td>
+</tr>
+<tr>
+<td>Vaal Thunderguard</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Projected Lightning</td>
+</tr>
+<tr>
+<td>Cairn Annihilator</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Shardshot</td>
+</tr>
+<tr>
+<td>Adolescent Rhex</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Alira&#39;s Blood Guard</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Alira&#39;s Dearest</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Ancient Worker</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Angered Remains</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Arctic Wolf</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Ashen Buccaneer</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Auric Lion</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Blackguard Scout</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Blackguard Soldier</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Bleached Crustacean</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Blood Elemental</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Bloodsoaked Fallen</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Bloodstained Fallen</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Bloodstained Warrior</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Bonewarped Warrior</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Brine Vassal</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Brittle Corsair</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Brittle Farmer</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Brittle Gladiator</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Broodling</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Bubbling Wave</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Buried Tarantula</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Cave Crustacean</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Chrome-infused Goliath</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Chrome-touched Goliath</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Coconut Crab</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Corrupted Beast</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Corrupted Extractor</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Crow Keeper</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Crystallised Fallen</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Cursed Spawn</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Deep Crustacean</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Deformed Slave</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Depraved Enforcer</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Depraved Justicar</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Desecrated Thrall</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Diseased Arachnid</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Doedre&#39;s Suffering</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Drenched Miscreation</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Dripping Dead</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Drowned</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Enraptured Arachnid</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Fathom Screamer</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Feast Attendant</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Feral Fowl</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Fetid Shambler</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Fevered Clot</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Flayed Warrior</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Guard</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Highwayman</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Indoctrinated Slave</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Infested Ape</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Infested Crustacean</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Infested Skitterer</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Invading Crustacean</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Kelp Crab</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Kraityn&#39;s Aspirant</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Lingering Aberration</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Lunar Miscreation</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Lunar Scout</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Lunaris Zealot</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Maligaro&#39;s Cruelty</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Maligaro&#39;s Inspiration</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Miscreation</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Mountain Lynx</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Night Horror</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Noxious Maiden</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Oak&#39;s Brute</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Orphaned Zealot</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Overgrown Rat</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Piety&#39;s Miscreation</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Plagued Arachnid</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Plated Parasite</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Pocked Mason</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Porcupine Goliath</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Primordial Creation</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Restless Pauper</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Risen Jaeger</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Rotten Gladiator</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Sandy Guardian</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Scarecrow</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Shackled Hellion</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Shavronne&#39;s Envy</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Shore Crab</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Skeletal Beast</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Slimy Bloodsucker</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Slimy Nemesis</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Solar Scout</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Spectral Soldier</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Spider Crab</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Sulphuric Scorpion</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Sulphuric Strider</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Sulphurspawn</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Swarming Rat</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Temple Justicar</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Timeless Wanderer</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Tolman</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Undying Socialite</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Undying Worker</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Undying Wretch</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Vaal Bone Warden</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Vaal Flame Guardian</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Vaal Recluse</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Vengeful Soul</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Waste Lurcher</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Withered Husk</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+<tr>
+<td>Wolf</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Lunging Strike</td>
+</tr>
+</tbody></table>
+
+</div>
+</body>
+
+</html> 
